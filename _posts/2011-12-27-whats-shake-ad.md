@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 什么摇摇广告位？
+title: 什么是摇摇广告位？
 category: dashboard
 ---
 
