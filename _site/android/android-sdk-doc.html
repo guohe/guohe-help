@@ -8,6 +8,19 @@
    <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen, projection" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js" charset="utf=8"></script>
+   <script type="text/javascript">
+   
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-18462847-3']);
+     _gaq.push(['_trackPageview']);
+   
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   
+   </script>
 </head>
 <body>
 	<div class="container">
@@ -31,7 +44,7 @@
 		</div>
 
 		<div class="row">
-			<h1 class="span10 post-header">果合开发者帮助中心</h1>
+			<h1 class="span10 post-header"><a href="/">果合开发者帮助中心</a></h1>
 		</div>
 	    <div class="row">
 	    	<div class="main span10">
@@ -157,7 +170,14 @@
 
 <p>如果您需要使用平台广告，还需要根据各平台文档要求选择性地添加如下权限：</p>
 
-<pre><code>&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;  &lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /&gt;    &lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /&gt;  &lt;uses-permission android:name="android.permission.READ_LOGS" /&gt; &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;    &lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /&gt; &lt;uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /&gt; &lt;uses-permission android:name="android.permission.CALL_PHONE" /&gt;
+<pre><code>&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /&gt;
+&lt;uses-permission android:name="android.permission.READ_LOGS" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /&gt;
+&lt;uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /&gt;
+&lt;uses-permission android:name="android.permission.CALL_PHONE" /&gt;
 &lt;!--哇棒还需要下面的权限--&gt;
 &lt;uses-permission android:name="android.permission.READ_SMS" /&gt;
 &lt;uses-permission android:name="android.permission.READ_CONTACTS" /&gt;
@@ -327,15 +347,22 @@ public interface OnAdClickedListener {
 	    	<div class="sidebar span5">
 				<h4>获得更多帮助</h4>
 <ul>
-	<li><a href="mailto:hi+dev@guohead.com">电子邮件</a>：hi+dev#guohead.com (把 # 换成 @ )</li>
+	<li><a href="mailto:hi+dev@guohead.com">电子邮件</a>：hi+dev#guohead.com</li>
 	<li>QQ客服1：2283821820</li>
 	<li>QQ客服2：2296331951</li>
+	<li>新浪微博：<a href="http://weibo.com/guohead" target="_blank">@果合移动广告</a></li>
 </ul>
 
 <h4>最新 SDK 下载</h4>
 <ul>
 	<li><span class="label success">1.2.3</span> <a href="http://guohead.com/changelog">Android SDK</a></li>
 	<li><span class="label notice">1.2.2</span> <a href="http://guohead.com/changelog">iOS SDK</a></li>
+</ul>
+
+<h4>关于本站</h4>
+<ul>
+	<li>用 <a href="https://github.com/mojombo/jekyll" target="_blank">Jekyll</a> 生成</li>
+	<li>由 <a href="http://pages.github.com" target="_blank">Github Pages</a> 提供服务</li>
 </ul>
 
 	    	</div>
