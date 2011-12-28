@@ -65,7 +65,8 @@ category: android
 
 注：您也可以通过项目引用等方式引入需要的Adapter文件，该方法可以查看网上相关资料，此处不再赘述。
 
-#### 添加关闭按钮图片将文件集中的图片文件 gh_closebutton.png 复制到项目的drawable文件夹下。
+#### 添加关闭按钮图片
+将文件集中的图片文件 gh_closebutton.png 复制到项目的 drawable 文件夹下。
 
 ### 创建广告位
 
@@ -89,29 +90,135 @@ category: android
 
 注意：
 
-1. 将您在果合网站上获得到的广告位 ID，替换上述代码中的"广告位ID"。2. 该初始化广告位代码通常放在 Activity 的 onCreate() 方法中。
+1. 将您在果合网站上获得到的广告位 ID，替换上述代码中的"广告位ID"。
+2. 该初始化广告位代码通常放在 Activity 的 onCreate() 方法中。
 
 当界面退出时，需停止广告位请求广告，应该在 Activity 的 onDestroy() 方法中调用 destroy() 方法。代码如下：
 
-	protected void onDestroy() {		// TODO Auto-generated method stub		super.onDestroy();		ghView_1.destroy();	}### 设置 AndroidManifest.xml 文件
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		ghView_1.destroy();
+	}
+
+### 设置 AndroidManifest.xml 文件
 
 #### 添加权限
 
-在 AndroidManifest.xml 文件的 </manifest> 标签前添加如下代码。
+在 AndroidManifest.xml 文件的 \</manifest\> 标签前添加如下代码。
 
-	<uses-permission android:name="android.permission.INTERNET" />	<uses-permission android:name="android.permission.READ_PHONE_STATE" />如果您需要使用平台广告，还需要根据各平台文档要求选择性地添加如下权限：
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+如果您需要使用平台广告，还需要根据各平台文档要求选择性地添加如下权限：
 
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />	<uses-permission android:name="android.permission.READ_LOGS" />	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />	<uses-permission android:name="android.permission.CALL_PHONE" />	<!--哇棒还需要下面的权限-->    <uses-permission android:name="android.permission.READ_SMS" />	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />	<uses-permission android:name="android.permission.READ_LOGS" />	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<!--哇棒还需要下面的权限-->
+	<uses-permission android:name="android.permission.READ_SMS" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
 
 注：若有疑问，请查看相关平台 SDK 开发文档。
 
-#### 添加 Activity 声明如果您只想开通品牌广告或者自主广告，请忽略此步骤。根据您想开通的平台广告，复制下面对应的 Activity 声明代码，粘贴到 </application> 标签前。
+#### 添加 Activity 声明
 
-	<!-- youmi begin -->        <activity            android:configChanges="keyboard|keyboardHidden|orientation"            android:name="net.youmi.android.AdActivity" >        </activity>        <!-- youmi end -->        <!-- domob begin -->        <activity            android:name="cn.domob.android.ads.DomobActivity"            android:theme="@android:style/Theme.Translucent" />        <!-- domob end -->        <!-- AdMob begin -->        <activity            android:configChanges="orientation|keyboard|keyboardHidden"            android:name="com.google.ads.AdActivity" />        <!-- AdMob end -->           <!-- Adwo begin -->        <activity android:name="com.adwo.adsdk.AdwoAdBrowserActivity" />        <!-- Adwo end -->        <!-- Inmobi begin -->        <activity            android:configChanges="keyboardHidden|orientation|keyboard"            android:name="com.inmobi.androidsdk.IMBrowserActivity" />        <!-- Inmobi end -->        <!-- BAIDU begin -->        <meta-data            android:name="BaiduMobAd_APP_ID"            android:value="debug" />        <meta-data            android:name="BaiduMobAd_APP_SEC"            android:value="debug" />        <activity            android:configChanges="keyboardHidden|orientation|keyboard"            android:name="com.baidu.AppActivity" >        </activity>        <!-- BAIDU end -->        <!-- vpon begin -->        <activity android:configChanges="orientation|keyboardHidden|navigation|keyboard"            android:label="@string/app_name"            android:name="com.vpon.adon.android.WebInApp"            android:screenOrientation="portrait" />         <!-- vpon end --> 	<!-- wooboon begin -->        <activity            android:configChanges="orientation|keyboardHidden"            android:name="com.wooboo.adlib_android.AdActivity" />        <!-- wooboon end -->        <!-- millennialmedia begin -->        <activity            android:configChanges="keyboardHidden|orientation|keyboard"            android:name="com.millennialmedia.android.MMAdViewOverlayActivity" >        </activity>        <activity            android:configChanges="keyboardHidden|orientation|keyboard"            android:name="com.millennialmedia.android.VideoPlayer" >        </activity>	<!-- millennialmedia end -->## 监听广告位状态（可选）
+如果您只想开通品牌广告或者自主广告，请忽略此步骤。根据您想开通的平台广告，复制下面对应的 Activity 声明代码，粘贴到 \</application\> 标签前。
 
-可以根据需要对每个广告位的状态进行监听，以便做出相应的处理。果合SDK提供了完善的监听机制。果合 SDK 提供了如下监听接口：	//监听广告展示前的状态。	public interface OnAdWillLoadListener {	   public void OnAdWillLoad(GHView m, String url);	}	//监听请求到广告的状态	public interface OnAdLoadedListener {	   public void OnAdLoaded(GHView m);	}	//监听广告请求失败状态	public interface OnAdFailedListener {	   public void OnAdFailed(GHView m);	}	//监听广告关闭状态	public interface OnAdClosedListener {	   public void OnAdClosed(GHView m);	}	//监听广告点击状态	public interface OnAdClickedListener {	   public void OnAdClicked(GHView m);	}例如，如果你想要监听广告被点击事件，可以在适当位置加入如下类似代码：
+有米广告
+	<!-- youmi begin -->
+	<activity
+		android:configChanges="keyboard|keyboardHidden|orientation"
+		android:name="net.youmi.android.AdActivity">
+	</activity>
+	<!-- youmi end -->
 
-	ghView.setOnAdClickedListener(new OnAdClickedListener() 	{				@Override		public void OnAdClicked(GHView arg0) {		Log.i("TAG","OnAdClicked");		}	});监听其他状态类似，具体您可以参看 Demo 中的代码，在此不再赘述。注意：由于很多广告平台没有提供监听广告被点击的接口，所以我们的 SDK 对广告点击的统计不是很精确。## 设置自定义定向（可选）
+多盟广告
+	<!-- domob begin -->
+	<activity
+		android:name="cn.domob.android.ads.DomobActivity"
+		android:theme="@android:style/Theme.Translucent" />
+	<!-- domob end -->
+
+AdMob	<!-- AdMob begin -->
+	<activity
+		android:configChanges="orientation|keyboard|keyboardHidden"
+		android:name="com.google.ads.AdActivity" />
+	<!-- AdMob end -->
+
+AdWo 安沃广告	<!-- Adwo begin -->
+	<activity android:name="com.adwo.adsdk.AdwoAdBrowserActivity" />
+	<!-- Adwo end -->
+
+InMobi	<!-- Inmobi begin -->
+	<activity
+		android:configChanges="keyboardHidden|orientation|keyboard"
+		android:name="com.inmobi.androidsdk.IMBrowserActivity" />
+	<!-- Inmobi end -->
+
+百度	<!-- Baidu begin -->
+	<meta-data
+		android:name="BaiduMobAd_APP_ID"
+		android:value="debug" />
+	<meta-data
+		android:name="BaiduMobAd_APP_SEC"
+		android:value="debug" />
+	<activity
+		android:configChanges="keyboardHidden|orientation|keyboard"
+		android:name="com.baidu.AppActivity">
+	</activity>
+	<!-- Baidu end -->
+
+Vpon	<!-- Vpon begin -->
+	<activity android:configChanges="orientation|keyboardHidden|navigation|keyboard"
+		android:label="@string/app_name"
+		android:name="com.vpon.adon.android.WebInApp"
+		android:screenOrientation="portrait" />
+	<!-- vpon end -->
+
+哇棒广告	<!-- wooboo begin -->
+	<activity
+		android:configChanges="orientation|keyboardHidden"
+		android:name="com.wooboo.adlib_android.AdActivity" />
+	<!-- wooboo end -->
+
+Millennial Media	<!-- Millennial Media begin -->
+	<activity
+		android:configChanges="keyboardHidden|orientation|keyboard"
+		android:name="com.millennialmedia.android.MMAdViewOverlayActivity" >
+	</activity>
+	<activity
+		android:configChanges="keyboardHidden|orientation|keyboard"
+		android:name="com.millennialmedia.android.VideoPlayer" >
+	</activity>
+	<!-- Millennial Media end -->
+
+## 监听广告位状态（可选）
+
+可以根据需要对每个广告位的状态进行监听，以便做出相应的处理。果合SDK提供了完善的监听机制。果合 SDK 提供了如下监听接口：
+
+	//监听广告展示前的状态。
+	public interface OnAdWillLoadListener {
+		public void OnAdWillLoad(GHView m, String url);	}
+	//监听请求到广告的状态
+	public interface OnAdLoadedListener {
+		public void OnAdLoaded(GHView m);	}
+	//监听广告请求失败状态
+	public interface OnAdFailedListener {
+		public void OnAdFailed(GHView m);	}
+	//监听广告关闭状态
+	public interface OnAdClosedListener {
+		public void OnAdClosed(GHView m);	}
+	//监听广告点击状态
+	public interface OnAdClickedListener {
+		public void OnAdClicked(GHView m);	}
+
+例如，如果你想要监听广告被点击事件，可以在适当位置加入如下类似代码：
+
+	ghView.setOnAdClickedListener(new OnAdClickedListener() 	{
+		@Override
+		public void OnAdClicked(GHView arg0) {
+			Log.i("TAG","OnAdClicked");
+		}
+	});
+监听其他状态类似，具体您可以参看 Demo 中的代码，在此不再赘述。注意：由于很多广告平台没有提供监听广告被点击的接口，所以我们的 SDK 对广告点击的统计不是很精确。## 设置自定义定向（可选）
 
 对应 Web 端提供的自定义定向功能(参见注解)，SDK 端提供用户为广告位设置自定义定向字段的方法。只需在相应的位置添加如下代码即可，对应的 Target Key 需要开发者定义。
 
