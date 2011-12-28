@@ -4,7 +4,7 @@ title: 果合整合了哪些广告平台？
 category: getting-started
 ---
 
-新果合目前整合了 11 家广告平台，具体列表如下：
+新果合目前整合了 13 家广告平台，具体列表如下：
 
 <table>
 	<thead>
