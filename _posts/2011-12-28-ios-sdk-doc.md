@@ -6,6 +6,8 @@ category: ios
 
 ## 配置果合 SDK
 
+本文档用于 iOS 开发者在应用中整合果合移动广告 SDK。
+
 ### SDK 文件内容
 
 文件集中包含有：
@@ -47,7 +49,7 @@ category: ios
 如果引用到 ASIHTTPRequest, Reachability 框架，需要在应用程序Target的Build Setting 里选择Header Search Paths ，并键入:
 	${SDK_DIR}/usr/include/libxml2
 如果要在程序中支持平台广告(Admob等广告平台提供的广告)，请选择Network_SDK_Adapters目录中相应的广告平台文件夹，并引用到您的应用工程中。
-![添加果合SDK](../images/ios* add* sdk.png)
+![添加果合SDK](../images/ios-add-sdk.png)
 
 ### 添加相应的framework
 

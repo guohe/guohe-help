@@ -31,6 +31,16 @@ body, p, li {
 	line-height: 36px;
 }
 
+.post h3 {
+	font-size: 14px;
+	line-height: 36px;
+	border: none;
+}
+
+.post code {
+	background: none;
+}
+
 .sidebar h4 {
 	border-bottom: 1px solid #d0d0d0;;
 }
