@@ -45,6 +45,10 @@ body, p, li {
 	width: 100%;
 }
 
+.post td ul {
+	margin: 0;
+}
+
 .sidebar h4 {
 	border-bottom: 1px solid #d0d0d0;;
 }
