@@ -4,19 +4,18 @@
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <title>果合开发者帮助中心</title>
    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+   <link rel="stylesheet" href="../css/base.css" type="text/css" media="screen, projection" />
    <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen, projection" />
 	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-	  <link rel="stylesheet" href="../css/base.css" type="text/css" media="screen, projection" />
    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js" charset="utf=8"></script>
 </head>
 <body>
-	<div class="header_new">
-	</div>
 	<div class="container">
-<!--		<div class="navigation row">
-			{% include navigation.html %}
-	    </div>-->
-		<div class="row"
+		<div class="header_new">
+			{% include header.html %}
+		</div>
+
+		<div class="row">
 			<h1>果合开发者帮助中心</h1>
 		</div>
 	    <div class="row">
@@ -28,9 +27,9 @@
 
 	    	</div>
 	    </div>
+		<div class="footer_new bc row">
+			{% include footer.html %}
+		</div>
 	</div>
-	<div class="footer_new bc">
-	</div>
-	    	
 </body>
 </html>

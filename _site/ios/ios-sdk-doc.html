@@ -1,10 +1,49 @@
-<hr />
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>果合开发者帮助中心</title>
+   <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+   <link rel="stylesheet" href="../css/base.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen, projection" />
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+   <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js" charset="utf=8"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="header_new">
+			<div class="headerBox bc clearfix">
+ <a href="http://guohead.com/home" class="fl"><h1 class="dsp_ilb txti_9999 mt_10">guohead.com 果合</h1></a>
+ <div class="BHover clearfix ml_20 fl pr">
+  <p class="nav dsp_ilb f_16 fclr_nav">
+   <a id="index1" class="noDashed toBlueLink cur"  href="http://guohead.com/home">首页</a>
+   <a id="index2" class="toBlueLink"  href="http://guohead.com/home/feature">App开发者</a>
+   <a id="index3" class="toBlueLink"  href="http://guohead.com/home/brand">移动营销</a>
+   <a id="index3" class="toBlueLink"  href="http://guohead.com/home/ad_platform">广告平台</a>
+   <a id="index3" class="toBlueLink"  href="http://help.guohead.com">帮助中心</a>
+  </p>
+  <div class="moveBG pa ml_15 none" style="left: 0px;"></div>
+ </div>
+ <div class="loginBlock fr pt_20 f_12">
+  <p class="header_right" style="text-align:right">
+   <a href="http://guohead.com/login" class="blueRBtn">登录</a>
+   <a href="http://guohead.com/register" class="mt_8 mr_20 toBlueLink" href="/userinfo"><span>注册</span></a>
+  </p>
+ </div>
+</div>      
 
-<p>layout: post
-title: 果合 iOS SDK 使用文档
-category: ios</p>
+		</div>
 
-<hr />
+		<div class="row">
+			<h1>果合开发者帮助中心</h1>
+		</div>
+	    <div class="row">
+	    	<div class="main span10">
+	    		<div class="post">
+  <h1><a href="/ios/ios-sdk-doc.html">果合 iOS SDK 使用文档</a></h1>
+  <p class="post-metainfo"><span class="label">28 Dec 2011</span></p>
+  <div class="post-content">
+    <p>本文档用于 iOS 开发者在应用中整合果合移动广告 SDK。</p>
 
 <h2>配置果合 SDK</h2>
 
@@ -53,7 +92,7 @@ category: ios</p>
 </code></pre>
 
 <p>如果要在程序中支持平台广告(Admob等广告平台提供的广告)，请选择Network_SDK_Adapters目录中相应的广告平台文件夹，并引用到您的应用工程中。
-<img src="../images/ios*%20add*%20sdk.png" alt="添加果合SDK" /></p>
+<img src="../images/ios-add-sdk.png" alt="添加果合SDK" /></p>
 
 <h3>添加相应的framework</h3>
 
@@ -110,7 +149,7 @@ category: ios</p>
             <td>
                 <ul>
                     <li>CoreTelephony.framework</li>
-、                 <li>MessageUI.framework</li>
+                    <li>MessageUI.framework</li>
                 </ul>
             </td>
         </tr>
@@ -350,3 +389,37 @@ ghAdView1.frame = CGRectMake(0.0,0.0,320.0, 50.0);
 
 <p>自定义定向功能: 用以满足应用的特殊目标定向的需求 。用户可以在 Web 端为广告定义多个自定义定向字段(以逗号分隔，例如 key1, key2)；在应用中，可以通过为广告位设置一个自定义定向字段(例如 key1)对用户群做定向投放。规则举例: 广告A设置的自定义定向字段为 key1,key2，用户群a设置的定向字段为key1，用户群 b 未设置定向字段，用户群 c 设置定向字段为 key2，则 a 和 c 可以看到广告 A，b则看不到。
  </p>
+
+  </div>
+</div>
+	    	</div>
+	    	<div class="sidebar span5">
+				<h4>获得更多帮助</h4>
+<ul>
+	<li><a href="mailto:hi+dev@guohead.com">电子邮件</a></li>
+	<li>QQ客服1：2283821820</li>
+	<li>QQ客服2：2296331951</li>
+</ul>
+
+<h4>最新 SDK 下载</h4>
+<ul>
+	<li><span class="label success">1.2.3</span> <a href="#">Android SDK</a></li>
+	<li><span class="label notice">1.2.2</span> <a href="#">iOS SDK</a></li>
+</ul>
+
+	    	</div>
+	    </div>
+		<div class="footer_new bc row">
+			  <p class="clearfix w100">
+   <span class="fl">
+    <a href="http://blog.guohead.com/about/" target="_blank" class="toBlueLink2 footer_first pl_10">关于果合移动广告</a>
+    <a href="http://blog.guohead.com" target="_blank" class="toBlueLink2">博客</a>
+    <a href="http://guohead.uservoice.com/forums/95429-general" target="_blank" class="toBlueLink2">问题反馈</a>
+   </span>
+   <span>© 2011 Guohead.com<a href="http://www.miibeian.gov.cn/" class="toBlueLink2 footer_last">京ICP备10033967号-5</a></span>
+  </p>
+
+		</div>
+	</div>
+</body>
+</html>
