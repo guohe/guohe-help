@@ -41,6 +41,10 @@ body, p, li {
 	background: none;
 }
 
+.post img {
+	width: 100%;
+}
+
 .sidebar h4 {
 	border-bottom: 1px solid #d0d0d0;;
 }
