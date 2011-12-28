@@ -16,7 +16,7 @@ fieldset, img{ border: none;}
 button, input, select, textarea{ font-size: 100%;}
 caption, legend{ display:none;}
 html{ overflow-y: scroll;}
-body{ background: #fff; color: #858585; overflow-x:hidden;}
+body{ background: #fff; color: #363636; overflow-x:hidden;}
 textarea{ height:60px; resize:vertical; overflow:auto; line-height:20px;}
 
 
