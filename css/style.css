@@ -20,6 +20,10 @@ body, p, li {
 	margin-top: 1em;
 }
 
+h1.post-header {
+	border-bottom: 1px solid #d0d0d0;;
+}
+
 .post h1 {
 	font-size: 18px;
 	line-height: 36px;
