@@ -111,7 +111,14 @@ category: android
 	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 如果您需要使用平台广告，还需要根据各平台文档要求选择性地添加如下权限：
 
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />	<uses-permission android:name="android.permission.READ_LOGS" />	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.READ_LOGS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
 	<!--哇棒还需要下面的权限-->
 	<uses-permission android:name="android.permission.READ_SMS" />
 	<uses-permission android:name="android.permission.READ_CONTACTS" />
