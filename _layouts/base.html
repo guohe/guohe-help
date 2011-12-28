@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>果合开发者帮助中心</title>
+   <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" />
+   <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection" />
+   <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js" charset="utf=8"></script>
+</head>
+<body>
+	<div class="header">
+		{% include header.html %}
+	</div>
+	<div class="container">
+		<div class="navigation row">
+			{% include navigation.html %}
+	    </div>
+	    <div class="row">
+	    	<div class="main span10">
+	    		{{ content }}
+	    	</div>
+	    	<div class="sidebar span5">
+				{% include sidebar.html %}
+	    	</div>
+	    </div>
+	</div>
+	<div class="footer">
+		{% include footer.html%}
+	</div>
+	    	
+</body>
+</html>

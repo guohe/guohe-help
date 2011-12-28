@@ -1,0 +1,55 @@
+body, p, li {
+	font-size: 13.5px;
+	line-height: 24px;
+}
+
+.header {
+	height: 150px;
+}
+
+.main {
+	border-right: 1px solid #d0d0d0;
+	padding-right: 39px;
+}
+
+.main h3 {
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.main ul {
+	margin-top: 1em;
+}
+
+.search {
+	background-color: #ddd;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+.search input {
+	margin-top: .5em;
+}
+
+.post h1 {
+	font-size: 18px;
+	line-height: 36px;
+	margin-bottom: 0px;
+}
+
+.post h2 {
+	font-size: 16px;
+	line-height: 36px;
+}
+
+.sidebar h4 {
+	border-bottom: 1px solid #d0d0d0;;
+}
+
+.sidebar ul {
+	margin-top: 1em;
+	margin-left: 0px;
+}
+
+.sidebar li {
+	list-style: none;
+}
