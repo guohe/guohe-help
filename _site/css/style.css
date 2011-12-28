@@ -90,3 +90,18 @@ body, p, li {
 .footer_new a{ padding:0 10px; border-left: 1px solid #d7d7d7;}
 .footer_new .footer_first{ padding-left:0; border: none;}
 .footer_new .footer_last{ padding-right:0; border: none;}
+
+/*new buttons*/
+.OrangeRBtn{background: #EF5105; text-align: center; border-radius:25px; padding:7px 20px; width:50px; display: inline-block;color:#fff;}
+.OrangeRBtn:hover{color: #fff; background: #db4903;}
+.OrangeRBtn:focus{color: #fff;}
+.blueRBtn{ color: #fff; background: #0C97E4; text-align: center; border-radius:25px; padding:7px 20px; width:50px; display: inline-block;color:#fff;}
+.blueRBtn:hover{color: #fff; background: #0c90d9;}
+.blueRBtn:link{ color: #fff;}
+.blueRBtn:focus{color: #fff;}
+.blueRBtn:visited{color: #fff;}
+.grayRBtn{background: #999;cursor:default;}
+.grayRBtn:hover{background: #999;}
+
+a.blueLink{color: #336599;}
+a.blueLink:hover{text-decoration: underline;}
