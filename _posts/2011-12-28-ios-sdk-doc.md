@@ -103,7 +103,7 @@ category: ios
 			<td>
 				<ul>
 					<li>CoreTelephony.framework</li>
-、					<li>MessageUI.framework</li>
+					<li>MessageUI.framework</li>
 				</ul>
 			</td>
 		</tr>
