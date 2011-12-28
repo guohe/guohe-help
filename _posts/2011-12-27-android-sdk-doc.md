@@ -24,311 +24,116 @@
 		</tr>
 		<tr>
 			<td>Adapters 文件夹</td>
-			<td>广告平台SDK和果合提供的适配开放源码</td>
+			<td>广告平台 SDK 和果合提供的适配开放源码</td>
 		</tr>
 		<tr>
-			<td>GuoHe_Integration_iOS.pdf</td>
-			<td>果合 iOS SDK 使用文档（本文档）</td>
+			<td>GuoHe_Integration_Android.pdf</td>
+			<td>Android SDK更新日志（本文档）</td>
 		</tr>
 		<tr>
-			<td>Changelog.pdf</td>
-			<td>果合iOS SDK更新日志</td>
+			<td>gh_closebutton.png</td>
+			<td>关闭按钮图片</td>
 		</tr>
 	</tbody>
 </table>
 
 ### 添加果合 SDK 文件到你的工程中
 
-将 GuoHeSDK (支持iOS 4.0以上) 目录引用到您的应用工程中，如下图，GuoHeSDK 文件夹中的 TouchJSON, ASIHTTPRequest, Reachability 为开源框架，如果您的应用中已经含有，将其删除掉。
-如果引用到 ASIHTTPRequest, Reachability 框架，需要在应用程序Target的Build Setting 里选择Header Search Paths ，并键入:
-	${SDK_DIR}/usr/include/libxml2
-如果要在程序中支持平台广告(Admob等广告平台提供的广告)，请选择Network_SDK_Adapters目录中相应的广告平台文件夹，并引用到您的应用工程中。
-![添加果合SDK](../images/ios-add-sdk.png)
+将文件集中的libs文件夹复制到项目工程的根目录下。打开Eclipse，右键点击项目，弹出菜单中选择“Properties(属性)”，选择左侧的“Java Build Path(Java 构建路径)”，然后选择“Libraries(库)”选项卡，点击“Add JARS...(添加JAR...)”，选择项目中的libs文件夹下的Guohe.jar，如果你需要使用平台广告，则还需要选择相应的平台广告的jar包。点击“OK(确定)”.此时项目下的"Referenced Libraries(引入的库)" 应包含Guohe.jar，以及已选择的平台广告的jar包。相关截图如下：
 
-### 添加相应的framework
+![添加 Jar](../images/android-add-libs.png)
 
-编译GuoHeSDK中的文件需要引用相应的framework，请添加如下framework，如果您的应用中已经含有，则不需重复添加：
+![添加 Jar](../images/android-add-libs2.png)
 
-* UIKit.framework
-* Foundation.framework
-* CoreGraphics.framework
-* QuartzCore.framework
-* CFNetwork.framework
-* CoreLocation.framework                  
-* SystemConfiguration.framework
-* MobileCoreServices.framework   
-* libxml2.dylib
-* libz.dylib
+## 在您的工程代码中使用果合SDK
 
-如果需要支持平台广告(即 Network_SDK_Adapter 目录)，需要额外引用各个平台广告所需的 framework 列举如下，如果您的应用中已经含有，不需重复添加:
+### 添加相应文件
+
+#### 添加 Adapter 文件
+
+如果您只想开通品牌广告或者自主广告，请忽略此步骤。如果您想开通平台广告，则右键点击项目，选择”New（新建）“，弹出菜单中选择“Package（包）”，在“Name(名称)”中输入：com.guohead.sdk.adapters，点击“Finish（完成）”。在下载的文件集中的Adapters文件夹下找到您想要开通的平台广告对应的Adapter类，将其复制到项目的com.guohead.sdk.adapters包下。相关截图如下：
+
+![添加 Adapter](../images/android-add-adapter.png)
+
+![添加 Adapter](../images/android-add-adapter2.png)
+
+注：您也可以通过项目引用等方式引入需要的Adapter文件，该方法可以查看网上相关资料，此处不再赘述。
+
+#### 添加关闭按钮图片将文件集中的图片文件 gh_closebutton.png 复制到项目的drawable文件夹下。
+
+### 创建广告位
+
+#### 用 XML 布局
+
+在 XML 布局文件中适当位置添加如下代码创建广告位：
+
+	<com.guohead.sdk.GHView android:id="@+id/mGHView_1" android:layout_height="wrap_content" android:layout_width="wrap_content"></com.guohead.sdk.GHView>
+
+注：果合 Android SDK 1.1版本增加了广告位关闭按钮的设置，开发着在网站上创建/编辑广告位时可以为广告位设置关闭按钮样式为“广告位内”、“右上角”、“无”。#### 用代码布局
+
+	GHView  ghView_1=new GHView(this);                             	ghView_1.setAdUnitId("果合ID");                                 	ghView_1.startLoadAd();                                     
+
+将 ghView_1 添加到你想要的地方。
+
+### 初始化广告位，请求广告
+
+在 Java 文件中嵌入如下代码进行广告位的初始化：
+
+	GHView ghView_1;	...	ghView_1 = (GHView) findViewById(R.id.mGHView_1);	ghView_1.setAdUnitId("广告位ID");//设置广告位ID	ghView_1.startLoadAd();//请求广告
+
+注意：
+
+1. 将您在果合网站上获得到的广告位 ID，替换上述代码中的"广告位ID"。2. 该初始化广告位代码通常放在 Activity 的 onCreate() 方法中。
+
+当界面退出时，需停止广告位请求广告，应该在 Activity 的 onDestroy() 方法中调用 destroy() 方法。代码如下：
+
+	protected void onDestroy() {		// TODO Auto-generated method stub		super.onDestroy();		ghView_1.destroy();	}### 设置 AndroidManifest.xml 文件
+
+#### 添加权限
+
+在 AndroidManifest.xml 文件的 </manifest> 标签前添加如下代码。
+
+	<uses-permission android:name="android.permission.INTERNET" />	<uses-permission android:name="android.permission.READ_PHONE_STATE" />如果您需要使用平台广告，还需要根据各平台文档要求选择性地添加如下权限：
+
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />	<uses-permission android:name="android.permission.READ_LOGS" />	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />	<uses-permission android:name="android.permission.CALL_PHONE" />	<!--哇棒还需要下面的权限-->    <uses-permission android:name="android.permission.READ_SMS" />	<uses-permission android:name="android.permission.READ_CONTACTS" />
+
+注：若有疑问，请查看相关平台 SDK 开发文档。
+
+#### 添加 Activity 声明如果您只想开通品牌广告或者自主广告，请忽略此步骤。根据您想开通的平台广告，复制下面对应的 Activity 声明代码，粘贴到 </application> 标签前。
+
+	<!-- youmi begin -->        <activity            android:configChanges="keyboard|keyboardHidden|orientation"            android:name="net.youmi.android.AdActivity" >        </activity>        <!-- youmi end -->        <!-- domob begin -->        <activity            android:name="cn.domob.android.ads.DomobActivity"            android:theme="@android:style/Theme.Translucent" />        <!-- domob end -->        <!-- AdMob begin -->        <activity            android:configChanges="orientation|keyboard|keyboardHidden"            android:name="com.google.ads.AdActivity" />        <!-- AdMob end -->           <!-- Adwo begin -->        <activity android:name="com.adwo.adsdk.AdwoAdBrowserActivity" />        <!-- Adwo end -->        <!-- Inmobi begin -->        <activity            android:configChanges="keyboardHidden|orientation|keyboard"            android:name="com.inmobi.androidsdk.IMBrowserActivity" />        <!-- Inmobi end -->        <!-- BAIDU begin -->        <meta-data            android:name="BaiduMobAd_APP_ID"            android:value="debug" />        <meta-data            android:name="BaiduMobAd_APP_SEC"            android:value="debug" />        <activity            android:configChanges="keyboardHidden|orientation|keyboard"            android:name="com.baidu.AppActivity" >        </activity>        <!-- BAIDU end -->        <!-- vpon begin -->        <activity android:configChanges="orientation|keyboardHidden|navigation|keyboard"            android:label="@string/app_name"            android:name="com.vpon.adon.android.WebInApp"            android:screenOrientation="portrait" />         <!-- vpon end --> 	<!-- wooboon begin -->        <activity            android:configChanges="orientation|keyboardHidden"            android:name="com.wooboo.adlib_android.AdActivity" />        <!-- wooboon end -->        <!-- millennialmedia begin -->        <activity            android:configChanges="keyboardHidden|orientation|keyboard"            android:name="com.millennialmedia.android.MMAdViewOverlayActivity" >        </activity>        <activity            android:configChanges="keyboardHidden|orientation|keyboard"            android:name="com.millennialmedia.android.VideoPlayer" >        </activity>	<!-- millennialmedia end -->## 监听广告位状态（可选）
+
+可以根据需要对每个广告位的状态进行监听，以便做出相应的处理。果合SDK提供了完善的监听机制。果合 SDK 提供了如下监听接口：	//监听广告展示前的状态。	public interface OnAdWillLoadListener {	   public void OnAdWillLoad(GHView m, String url);	}	//监听请求到广告的状态	public interface OnAdLoadedListener {	   public void OnAdLoaded(GHView m);	}	//监听广告请求失败状态	public interface OnAdFailedListener {	   public void OnAdFailed(GHView m);	}	//监听广告关闭状态	public interface OnAdClosedListener {	   public void OnAdClosed(GHView m);	}	//监听广告点击状态	public interface OnAdClickedListener {	   public void OnAdClicked(GHView m);	}例如，如果你想要监听广告被点击事件，可以在适当位置加入如下类似代码：
+
+	ghView.setOnAdClickedListener(new OnAdClickedListener() 	{				@Override		public void OnAdClicked(GHView arg0) {		Log.i("TAG","OnAdClicked");		}	});监听其他状态类似，具体您可以参看 Demo 中的代码，在此不再赘述。注意：由于很多广告平台没有提供监听广告被点击的接口，所以我们的 SDK 对广告点击的统计不是很精确。## 设置自定义定向（可选）
+
+对应 Web 端提供的自定义定向功能(参见注解)，SDK 端提供用户为广告位设置自定义定向字段的方法。只需在相应的位置添加如下代码即可，对应的 Target Key 需要开发者定义。
+
+	ghView.setKeywords("Target Key ");
+
+自定义定向功能: 用以满足应用的特殊目标定向的需求 。用户可以在Web端为广告定义多个自定义定向字段(以逗号分隔，例如key1,key2)；在应用中，可以通过为广告位设置一个自定义定向字段(例如key1)对用户群做定向投放。规则举例: 广告A设置的自定义定向字段为key1,key2，用户群a设置的定向字段为key1，用户群b未设置定向字段，用户群c设置定向字段为key2，则a和c可以看到广告A，b则看不到。
+
+## 附录：GHView 接口列表
 
 <table>
-	<thead>
-		<tr>
-			<th>广告平台</th>
-			<th>所需添加的框架</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>AdMob</td>
-			<td>
-				<ul>
-					<li>AudioToolbox.framework</li>
-					<li>MessageUI.framework</li>
-					<li>MediaPlayer.framework</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td>有米</td>
-			<td>
-				<ul>
-					<li>CoreTelephony.framework</li>
-					<li>ImageIO.framework</li>
-					<li>MapKit.framework</li>
-					<li>MessageUI.framework</li>
-					<li>libsqlite3.0.dylib</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td>多盟</td>
-			<td>
-				<ul>
-					<li>CoreTelephony.framework</li>
-					<li>MessageUI.framework</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td>安沃</td>
-			<td>
-				<ul>
-					<li>MapKit.framework</li>
-					<li>MessageUI.framework</li>
-					<li>MediaPlayer.framwork</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td>InMobi</td>
-			<td>
-				<ul>
-					<li>MessageUI.framework</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td>iAd</td>
-			<td>
-				<ul>
-					<li>iAd.framework</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td>SmartMad 亿动智道</td>
-			<td>
-				<ul>
-					<li>AudioToolbox.framework</li>
-					<li>AVFoundation.framework</li>
-					<li>CoreMotion.framework</li>
-					<li>CoreTelephony.framework</li>
-					<li>MediaPlayer.framwork</li>
-					<li>libsqlite3.0.dylib</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td>Vpon</td>
-			<td>
-				<ul>
-					<li>Security.framework</li>
-					<li>MessageUI.framework</li>
-					<li>MapKit.framework</li>					
-					<li>CoreMedia.framework</li>
-					<li>CoreVideo.framework</li>
-					<li>AudioToolbox.framework</li>
-					<li>AVFoundation.framework</li>
-					<li>AddressBook.framework</li>
-					<li>MobileCoreServices.framework</li>				
-					<li>CoreData.framework</li>
-					<li>CoreTelephony.framework</li>
-					<li>CoreFoundation.framework</li>
-					<li>libiconv.dylib</li>
-					<li>libsqlite3.0.dylib</li>
-				</ul>
-				Vpon 添加使用 Apon (用于地理定位，便于广告精准投放) 请参考：<a href="http://wiki.vpon.com/w/index.php?title=IPhone_Apon_SDK_%E6%89%8B%E5%86%8A" target="_blank">Vpon 参考文档</a>
-				由于 Vpon 广告平台当前版本的 SDK 没有提供广告点击时调用的接口和广告内容窗口关闭时调用的接口，因此在果合上无法记录相应数据，但不影响在该广告平台上的数据。
-			</td>
-		</tr>
-		<tr>
-			<td>微云</td>
-			<td>
-				<ul>
-					<li>MediaPlayer.framework</li>
-				</ul>
-				需要在应用程序 Target 的 Build Setting 里双击 Other Linker Flags，添加选项 -ObjC 和 -all_load。
-				由于微云（WiYun）广告平台当前版本的SDK配置与哇棒（Wooboo）广告平台有冲突，所以两个广告平台不能同时使用。
-				由于微云（WiYun）广告平台当前版本的SDK没有提供广告点击时调用的接口和广告内容窗口关闭时调用的接口，因此在果合上无法记录相应数据，但不影响在该广告平台上的数据。
-				
-			</td> 
-		</tr>
-		<tr>
-			<td>哇棒</td>
-			<td>
-				<ul>
-					<li>MessageUI.framework</li>
-					<li>MapKit.framework</li>					
-					<li>MediaPlayer.framework</li>
-				</ul>
-				由于哇棒（Wooboo）广告平台当前版本的SDK没有提供广告点击时调用的接口和广告内容窗口关闭时调用的接口，因此在果合上无法记录相应数据，但不影响在该广告平台上的数据。
-			</td> 
-		</tr>
-		<tr>
-			<td>Millennial Media</td>
-			<td>
-				<ul>
-					<li>MediaPlayer.framework</li>
-					<li>AudioToolbox.framework</li>
-					<li>AVFoundation.framework</li>
-				</ul>
-			由于 Millennial Media 广告平台当前版本的SDK配置与哇棒（Wooboo）广告平台有冲突，所以两个广告平台不能同时使用。
-			</td> 
-		</tr>		
-	</tbody>
+	<tr>
+		<td>startLoadAd()</td>
+		<td>开始请求广告</td>
+	</tr>
+	<tr>
+		<td>pauseLoadAd()</td>
+		<td>暂停请求广告，即暂停广告之间的切换。（注意：如果使用平台广告，最后显示的广告平台SDK若有自动刷新逻辑，这个广告平台将会继续刷新它自己的广告。果合SDK只暂停果合广告平台或者平台广告的切换。）</td>
+	</tr>
+	<tr>
+		<td>restartLoadAd()</td>
+		<td>重新请求广告，即重新开始广告之间的切换。</td>
+	</tr>
+	<tr>
+		<td>setAdUnitId("广告位ID ")</td>
+		<td>在开始请求广告之前必须设置广告位ID才能正确请求广告。</td>
+	</tr>
+	<tr>
+		<td>setOnxxxListener</td>
+		<td>设置广告状态监听器，详情请看监听广告位状态。</td>
+	</tr>
 </table>
-
-## 在你的工程代码中使用果合 SDK
-
-### 继承 GHAdViewDelegate，定义广告位
-
-选择将要显示果合广告位的指定 ViewController，在 ViewController.h 中继承 GHAdViewDelegate，并定义广告位，参考如下代码段。
-
-	#import <UIKit/UIKit.h>
-	#import "GHAdView.h"
-	#import "GHAdViewDelegate.h"
-	@interface GuoHeProSDKSample_iPhoneViewController : UIViewController                                    <GHAdViewDelegate>
-	{
-	  //广告位1
-	  GHAdView *ghAdView1;
-	  //广告位2
-	  GHAdView *ghAdView2;
-	}
-	@property (nonatomic, retain) GHAdView *ghAdView1;
-	@property (nonatomic, retain) GHAdView *ghAdView2;
-	@end	
-
-请在 ViewController.m 中定义相应的 ghAdView 属性，并在 dealloc 方法中 release 它们。
-
-### 实现 GHAdViewDelegate 的必选方法
-
-在选定的 ViewController.m 中实现 GHAdViewDelegate 的方法， viewControllerForPresentingModalView 为必需实现，其他方法为可选实现，参考如下代码段。
-
-	#pragma mark -GHAdViewDelegate required method
-	- (UIViewController *)viewControllerForPresentingModalView
-	{
-	  return self;
-	}
-	//注: 如果继承GHAdViewDelegate的文件不是ViewController，是AppDelegate，请将return self 改为 return [self viewControllerForPresentingModalView]
-
-### 初始化广告位，请求广告, 暂停广告请求
-
-在 ViewController 适当的代码位置(例如 viewDidLoad 方法中)添加代码，进行初始化广告位、请求广告和暂停广告请求的操作，参考如下代码段。
-
-	- (void)viewDidLoad
-	{
-	    [super viewDidLoad];
-	   
-	    //创建广告位1
-	    ghAdView1 = [[GHAdView alloc] initWithAdUnitId:@"65d5c1fed049c02da59e48caae0c6ee9" size:CGSizeMake(320.0, 50.0)];
-	    //设置委托
-	    ghAdView1.delegate = self;
-	    //请求广告
-	    [ghAdView1 loadAd];
-	    //设置frame并添加到View中
-	    ghAdView1.frame = CGRectMake(0.0,0.0,320.0, 50.0);
-	    [self.view addSubview:ghAdView1];
-	    
-	    //创建广告位2
-	    ghAdView2 = [[GHAdView alloc] initWithAdUnitId:@"e220084a61e0b5d49a403122569d79e7" size:CGSizeMake(250.0, 300.0)];
-	    ghAdView2.delegate = self;
-	    [ghAdView2 loadAd];
-	    ghAdView2.frame = CGRectMake(35.0,60.0,250, 300.0);
-	    [self.view addSubview:ghAdView2];
-	    
-	    //创建广告位3
-	    ghAdView3 = [[GHAdView alloc] initWithAdUnitId:@"dcd41b7048dd16a7d201cb5bfa4593ec" size:CGSizeMake(320.0, 100.0)];
-	    ghAdView3.delegate = self;
-	    [ghAdView3 loadAd];
-	    ghAdView3.frame = CGRectMake(0.0,360.0,320.0, 100.0);
-	    [self.view addSubview:ghAdView3];
-	}
-	//暂停广告请求
-	-(void)stopTheAdRequest
-	{
-	    [ghAdView1 stopAdRequest];
-	}
-	
-	//恢复广告请求
-	-(void)resumeTheAdRequest
-	{
-	    [ghAdView1 resumeAdRequest];
-	}
-
-### 实现 GHAdViewDelegate 的可选方法
-
-GHAdViewDelegate 中的可选方法包括加载广告失败时调用的接口、加载广告成功时调用的接口、广告点击出现内容窗口时调用的接口、广告内容窗口关闭时调用的接口、广告位的关闭按钮被点击时调用的接口，开发者可以根据自己的需要实现这些接口。接口示例代码如下:
-
-	@optional
-	/*
-	 * These callbacks notify you regarding whether the ad view (un)successfully loaded an ad.
-	 */
-	- (void)adViewDidFailToLoadAd:(GHAdView *)view;
-	- (void)adViewDidLoadAd:(GHAdView *)view;
-	
-	
-	/*
-	 * These callbacks are triggered when the ad view is about to present/dismiss a modal view. If your application may be disrupted by these actions, you can use these notifications to handle them (for example, a game might need to pause/unpause).
-	 */
-	- (void)willPresentModalViewForAd:(GHAdView *)view;
-	- (void)didDismissModalViewForAd:(GHAdView *)view;
-	
-	
-	/*
-	 * This method is set user's current location
-	 */
-	- (CLLocation *)locationInfo;
-	
-	
-	/*
-	 * This method is called when the close button on adview is clicked.
-	 */
-	- (void)didClosedAdView:(GHAdView *)view;
-
-### 设置自定义定向字段
-
-对应 Web 端提供的自定义定向功能(参见注解)，SDK 端提供用户为广告位设置自定义定向字段的方法。只需在相应的位置添加如下代码即可，用户类型和对应的 Target Key 需要开发者定义。
-
-    //创建广告位1
-    ghAdView1 = [[GHAdView alloc] initWithAdUnitId:@"65d5c1fed049c02da59e48caae0c6ee9" size:CGSizeMake(320.0, 50.0)];
-    //设置委托
-    ghAdView1.delegate = self;
-         //设置自定义定向字段
-    if (用户类型1) {
-        [ghAdView1 setCustomerTargetKey:@"Target Key 1"];
-    } else if (用户类型2) {
-        [ghAdView1 setCustomerTargetKey:@"Target Key 2"];
-    } else {
-        [ghAdView1 setCustomerTargetKey:@"Target Key 3"];
-    }
-    //请求广告
-    [ghAdView1 loadAd];
-    //设置frame并添加到View中
-    ghAdView1.frame = CGRectMake(0.0,0.0,320.0, 50.0);
-    [self.view addSubview:ghAdView1];
-
-自定义定向功能: 用以满足应用的特殊目标定向的需求 。用户可以在 Web 端为广告定义多个自定义定向字段(以逗号分隔，例如 key1, key2)；在应用中，可以通过为广告位设置一个自定义定向字段(例如 key1)对用户群做定向投放。规则举例: 广告A设置的自定义定向字段为 key1,key2，用户群a设置的定向字段为key1，用户群 b 未设置定向字段，用户群 c 设置定向字段为 key2，则 a 和 c 可以看到广告 A，b则看不到。
- 
-	
