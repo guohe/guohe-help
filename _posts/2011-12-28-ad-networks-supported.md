@@ -1,0 +1,98 @@
+---
+layout: post
+title: 果合整合了哪些广告平台？
+category: getting-started
+---
+
+新果合目前整合了 11 家广告平台，具体列表如下：
+
+<table>
+	<thead>
+		<tr>
+			<th>广告平台</th>
+			<th>链接</th>
+			<th>Android</th>
+			<th>iOS</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>AdMob</td>
+			<td>http://admob.com</td>
+			<td>支持</td>
+			<td>支持</td>
+		</tr>
+		<tr>
+			<td>iAd</td>
+			<td>http://developer.apple.com/iad/</td>
+			<td>不支持</td>
+			<td>支持</td>
+		</tr>
+		<tr>
+			<td>Millennial Media</td>
+			<td>https://developer.millennialmedia.com</td>
+			<td>支持</td>
+			<td>支持</td>
+		</tr>
+		<tr>
+			<td>Baidu</td>
+			<td>http://munion.baidu.com</td>
+			<td>支持</td>
+			<td>不支持</td>
+		</tr>
+		<tr>
+			<td>亿动智道</td>
+			<td>http://www.smartmad.com</td>
+			<td>支持</td>
+			<td>支持</td>
+		</tr>
+		<tr>
+			<td>多盟</td>
+			<td>http://domob.cn</td>
+			<td>支持</td>
+			<td>支持</td>
+		</tr>
+		<tr>
+			<td>微云</td>
+			<td>http://www.wiyun.com</td>
+			<td>支持</td>
+			<td>支持</td>
+		</tr>
+		<tr>
+			<td>易传媒</td>
+			<td>http://mobile.adchina.com/AboutUs/index.aspx</td>
+			<td>支持</td>
+			<td>支持</td>
+		<tr>
+			<td>Vpon</td>
+			<td>http://www.vpon.com/zh-cn/index.html</td>
+			<td>支持</td>
+			<td>支持</td>
+		</tr>
+		<tr>
+			<td>有米</td>
+			<td>http://www.youmi.net</td>
+			<td>支持</td>
+			<td>支持</td>
+		</tr>
+		<tr>
+			<td>哇棒</td>
+			<td>http://www.wooboo.com.cn</td>
+			<td>支持</td>
+			<td>支持</td>
+		</tr>
+		<tr>
+			<td>安沃</td>
+			<td>http://www.adwo.com</td>
+			<td>支持</td>
+			<td>支持</td>
+		</tr>
+		<tr>
+			<td>AdSage</td>
+			<td>http://www.mobisage.com/</td>
+			<td>不支持</td>
+			<td>支持</td>
+		</tr>
+	</tbody>
+</table>
+		
