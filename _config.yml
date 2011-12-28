@@ -1,3 +1,4 @@
 markdown: rdiscount
 safe: true
 pygments: false
+permalink: none
