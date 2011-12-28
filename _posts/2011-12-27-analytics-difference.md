@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 果合统计数据为什么和我在广告平台后台看到的数据不一致？
-category: dashboard
+category: mediation
 ---
 
 ## 果合统计数据为什么和我在广告平台后台看到的数据不一致？

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 什么是 Publisher ID？
-category: dashboard
+category: mediation
 ---
 
 ## 什么是 Publisher ID？

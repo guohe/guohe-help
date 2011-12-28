@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 什么是广告位？我能建立多个广告位吗？
-category: dashboard
+category: ad-serving
 ---
 
 ## 我能建立多个广告位吗？

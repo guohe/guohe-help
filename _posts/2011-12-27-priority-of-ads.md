@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 广告优先级：标准和补余
-category: dashboard
+category: ad-serving
 ---
 
 ## 标准跟补余有什么区别？

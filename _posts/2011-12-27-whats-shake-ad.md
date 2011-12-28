@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 什么是摇摇广告位？
-category: dashboard
+category: ad-serving
 ---
 
 ## 摇摇广告位是什么意思？

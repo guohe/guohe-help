@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何在果合进行广告配置？
-category: dashboard
+category: mediation
 ---
 
 ## 如何在果合进行广告配置？
