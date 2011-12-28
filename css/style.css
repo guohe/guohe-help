@@ -20,16 +20,6 @@ body, p, li {
 	margin-top: 1em;
 }
 
-.search {
-	background-color: #ddd;
-	padding-top: 10px;
-	margin-bottom: 20px;
-}
-
-.search input {
-	margin-top: .5em;
-}
-
 .post h1 {
 	font-size: 18px;
 	line-height: 36px;

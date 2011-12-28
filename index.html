@@ -4,12 +4,18 @@ title: 果合开发者帮助中心
 ---
 
 <div class="row">
-	<div class="span10 search">
-		<form method="post" action="http://google.com/" class="form-stacked">
-			<label for="sitesearch">有问题 先搜索</label>
-			<input class="xxlarge" name="sitesearch" type="text" />
-		</form>
-	</div>
+	<div id="cse" class="span10">站内搜索</div>
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript"> 
+	  google.load('search', '1', {language : 'zh-CN', style : google.loader.themes.MINIMALIST});
+	  google.setOnLoadCallback(function() {
+	    var customSearchControl = new google.search.CustomSearchControl(
+	      '002341897268909402716:m_a8pexohtu');
+	
+	    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+	    customSearchControl.draw('cse');
+	  }, true);
+	</script>
 </div>
 
 <div class="row">
