@@ -52,7 +52,7 @@ h1.post-header {
 }
 
 .post img {
-	width: 100%;
+	max-width: 100%;
 }
 
 .post td ul {
