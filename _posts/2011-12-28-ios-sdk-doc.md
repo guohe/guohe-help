@@ -1,8 +1,8 @@
-* * * 
+---
 layout: post
 title: 果合 iOS SDK 使用文档
 category: ios
-* * * 
+---
 
 ## 配置果合 SDK
 
