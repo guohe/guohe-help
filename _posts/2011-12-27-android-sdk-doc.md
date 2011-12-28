@@ -1,3 +1,9 @@
+---
+layout: post
+title: Android SDK 使用文档
+category: android
+---
+
 本文档用于 Android 开发者在应用中整合果合移动广告 SDK。
 
 ## 配置果合 SDK
