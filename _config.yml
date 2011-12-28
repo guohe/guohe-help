@@ -1,4 +1,4 @@
 markdown: rdiscount
 safe: true
 pygments: false
-permalink: none
+permalink: /:categories/:title.html
