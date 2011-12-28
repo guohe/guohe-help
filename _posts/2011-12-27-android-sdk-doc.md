@@ -1,10 +1,4 @@
----
-layout: post
-title: 果合 iOS SDK 使用文档
-category: ios
----
-
-本文档用于 iOS 开发者在应用中整合果合移动广告 SDK。
+本文档用于 Android 开发者在应用中整合果合移动广告 SDK。
 
 ## 配置果合 SDK
 
@@ -21,15 +15,15 @@ category: ios
 	</thead>
 	<tbody>
 		<tr>
-			<td>GuoHe SDK</td>
-			<td>果合 SDK</td>
+			<td>Libs 文件夹</td>
+			<td>果合 Android SDK 和平台广告 SDK</td>
 		</tr>
 		<tr>
-			<td>Demo_Application</td>
-			<td>果合 SDK 程序样例</td>
+			<td>Demo 文件夹</td>
+			<td>果合 Android SDK 程序样例</td>
 		</tr>
 		<tr>
-			<td>Network_SDK_Adapters</td>
+			<td>Adapters 文件夹</td>
 			<td>广告平台SDK和果合提供的适配开放源码</td>
 		</tr>
 		<tr>
