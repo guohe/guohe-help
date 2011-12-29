@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>果合开发者帮助中心</title>
+ <link href="http://help.guohead.com/atom.xml" rel="self"/>
+ <link href="http://help.guohead.com"/>
+ <updated>2011-12-29T21:13:15+08:00</updated>
+ <id>http://help.guohead.com</id>
+ <author>
+   <name>Guohe Ad</name>
+   <email>hi+dev@guohead.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>果合新手详细使用文档</title>
+   <link href="http://help.guohead.com/getting-started/guohe-getting-started.html"/>
+   <updated>2011-12-29T00:00:00+08:00</updated>
+   <id>http://neotalks.org/getting-started/guohe-getting-started</id>
+   <content type="html">&lt;h2&gt;果合新手详细使用文档&lt;/h2&gt;
+
+&lt;h3&gt;添加应用&lt;/h3&gt;
+
+&lt;p&gt;注册成功，并登陆后，点击“添加应用”按钮进入如下图所示的填写应用信息页面。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/dashboard-add-app.png&quot; alt=&quot;添加应用&quot; /&gt;&lt;/p&gt;
+
+&lt;h3&gt;添加广告位&lt;/h3&gt;
+
+&lt;p&gt;广告位是指一个应用中用于显示广告的位置，您可以为您的应用创建多个广告位，在不同的广告位显示不同的广告内容。添加应用完成后，您需要至少为您的应用添加一个广告位。摇摇广告位为初始隐藏，摇晃才会出现的广告位。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/dashboard-add-ad-unit.png&quot; alt=&quot;添加广告位&quot; /&gt;&lt;/p&gt;
+
+&lt;h3&gt;集成果合 SDK&lt;/h3&gt;
+
+&lt;p&gt;广告位添加完成后，会提示简单的集成说明，这时你需要点击“SDK下载”进入SDK 下载页面，&lt;a href=&quot;http://guohead.com/changelog&quot;&gt;下载果合SDK (Android / iOS)&lt;/a&gt;，并严格按照SDK使用文档集成果合 SDK。下载页面如下图:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/dashboard-download-sdk.png&quot; alt=&quot;SDK 下载&quot; /&gt;&lt;/p&gt;
+
+&lt;h3&gt;配置广告&lt;/h3&gt;
+
+&lt;p&gt;集成好果合SDK后，您还需要在果合网站上配置广告。选择一个广告位，点击右侧“广告配置”链接，进入如下图的广告配置页面。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/dashboard-ad-config.png&quot; alt=&quot;配置广告平台&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在广告配置页面，您可以选择广告平台(Admob 等)，也可以投放自己的自主广告。点击“选择广告平台”按钮，如下图，选择您想要使用的广告平台。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/dashboard-add-ad-network.png&quot; alt=&quot;配置广告平台&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;选择完成后点击保存，你将看到如下图见面，这时，您需要配置您的应用在各自广告平台上的唯一 ID，并设置广告分配比例。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/dashboard-add-publisher-id.png&quot; alt=&quot;填写广告平台配置&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;您也可以点击“投放广告”并选择一个自主广告在您的广告位上显示，如下图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/dashboard-ad-config.png&quot; alt=&quot;投放广告&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>哪些广告平台需要审核才能展示广告？</title>
+   <link href="http://help.guohead.com/tips/which-ad-network-needs-approval.html"/>
+   <updated>2011-12-28T00:00:00+08:00</updated>
+   <id>http://neotalks.org/tips/which-ad-network-needs-approval</id>
+   <content type="html">&lt;h2&gt;哪些广告平台需要审核之后才能展示广告？&lt;/h2&gt;
+
+&lt;p&gt;目前，除了微云，Vpon 之外大部分广告平台都需要提交审核。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>什么是 Publisher ID？</title>
+   <link href="http://help.guohead.com/mediation/whats-publisher-id.html"/>
+   <updated>2011-12-28T00:00:00+08:00</updated>
+   <id>http://neotalks.org/mediation/whats-publisher-id</id>
+   <content type="html">&lt;h2&gt;什么是 Publisher ID？&lt;/h2&gt;
+
+&lt;p&gt;ID / 广告位ID / App ID 是各广告平台为应用生成的唯一标识，当您在广告平台创建应用成功时即可看到此唯一标识。您需要将ID填入到果合后台（应用面板 - 广告配置，见下图）才能展示来自该广告平台的广告。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/dashboard-publisher-id.png&quot; alt=&quot;Publisher ID&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>为什么我的应用在测试中无法展示广告？</title>
+   <link href="http://help.guohead.com/mediation/testing-no-ads.html"/>
+   <updated>2011-12-28T00:00:00+08:00</updated>
+   <id>http://neotalks.org/mediation/testing-no-ads</id>
+   <content type="html">&lt;p&gt;为什么我的应用在测试中无法展示广告？&lt;/p&gt;
+
+&lt;p&gt;请用下面的步骤检查您的设置情况：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;没有在果合后台打开广告平台，&lt;a href=&quot;how-to-config-ads.html&quot;&gt;设置广告平台配比&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;已经设置配比，没有开启测试模式&lt;/li&gt;
+&lt;li&gt;开启测试模式但是没有广告，可能是广告平台未返回广告&lt;/li&gt;
+&lt;li&gt;很多广告平台的 SDK 都不能支持在模拟机中展示广告&lt;/li&gt;
+&lt;li&gt;推荐测试网站 (www.testin.cn)&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>果合 iOS SDK 使用文档</title>
+   <link href="http://help.guohead.com/ios/ios-sdk-doc.html"/>
+   <updated>2011-12-28T00:00:00+08:00</updated>
+   <id>http://neotalks.org/ios/ios-sdk-doc</id>
+   <content type="html">&lt;p&gt;本文档用于 iOS 开发者在应用中整合果合移动广告 SDK。&lt;/p&gt;
+
+&lt;h2&gt;配置果合 SDK&lt;/h2&gt;
+
+&lt;h3&gt;SDK 文件内容&lt;/h3&gt;
+
+&lt;p&gt;文件集中包含有：&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;文件名称&lt;/th&gt;
+            &lt;th&gt;文件内容&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;GuoHe SDK&lt;/td&gt;
+            &lt;td&gt;果合 SDK&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Demo_Application&lt;/td&gt;
+            &lt;td&gt;果合 SDK 程序样例&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Network_SDK_Adapters&lt;/td&gt;
+            &lt;td&gt;广告平台SDK和果合提供的适配开放源码&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;GuoHe_Integration_iOS.pdf&lt;/td&gt;
+            &lt;td&gt;果合 iOS SDK 使用文档（本文档）&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Changelog.pdf&lt;/td&gt;
+            &lt;td&gt;果合iOS SDK更新日志&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;h3&gt;添加果合 SDK 文件到你的工程中&lt;/h3&gt;
+
+&lt;p&gt;将 GuoHeSDK (支持iOS 4.0以上) 目录引用到您的应用工程中，如下图，GuoHeSDK 文件夹中的 TouchJSON, ASIHTTPRequest, Reachability 为开源框架，如果您的应用中已经含有，将其删除掉。
+如果引用到 ASIHTTPRequest, Reachability 框架，需要在应用程序Target的Build Setting 里选择Header Search Paths ，并键入:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;${SDK_DIR}/usr/include/libxml2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果要在程序中支持平台广告(Admob等广告平台提供的广告)，请选择Network_SDK_Adapters目录中相应的广告平台文件夹，并引用到您的应用工程中。
+&lt;img src=&quot;../images/ios-add-sdk.png&quot; alt=&quot;添加果合SDK&quot; /&gt;&lt;/p&gt;
+
+&lt;h3&gt;添加相应的framework&lt;/h3&gt;
+
+&lt;p&gt;编译GuoHeSDK中的文件需要引用相应的framework，请添加如下framework，如果您的应用中已经含有，则不需重复添加：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;UIKit.framework&lt;/li&gt;
+&lt;li&gt;Foundation.framework&lt;/li&gt;
+&lt;li&gt;CoreGraphics.framework&lt;/li&gt;
+&lt;li&gt;QuartzCore.framework&lt;/li&gt;
+&lt;li&gt;CFNetwork.framework&lt;/li&gt;
+&lt;li&gt;CoreLocation.framework&lt;/li&gt;
+&lt;li&gt;SystemConfiguration.framework&lt;/li&gt;
+&lt;li&gt;MobileCoreServices.framework&lt;/li&gt;
+&lt;li&gt;libxml2.dylib&lt;/li&gt;
+&lt;li&gt;libz.dylib&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;如果需要支持平台广告(即 Network_SDK_Adapter 目录)，需要额外引用各个平台广告所需的 framework 列举如下，如果您的应用中已经含有，不需重复添加:&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;广告平台&lt;/th&gt;
+            &lt;th&gt;所需添加的框架&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;AdMob&lt;/td&gt;
+            &lt;td&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;AudioToolbox.framework&lt;/li&gt;
+                    &lt;li&gt;MessageUI.framework&lt;/li&gt;
+                    &lt;li&gt;MediaPlayer.framework&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;有米&lt;/td&gt;
+            &lt;td&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;CoreTelephony.framework&lt;/li&gt;
+                    &lt;li&gt;ImageIO.framework&lt;/li&gt;
+                    &lt;li&gt;MapKit.framework&lt;/li&gt;
+                    &lt;li&gt;MessageUI.framework&lt;/li&gt;
+                    &lt;li&gt;libsqlite3.0.dylib&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;多盟&lt;/td&gt;
+            &lt;td&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;CoreTelephony.framework&lt;/li&gt;
+                    &lt;li&gt;MessageUI.framework&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;安沃&lt;/td&gt;
+            &lt;td&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;MapKit.framework&lt;/li&gt;
+                    &lt;li&gt;MessageUI.framework&lt;/li&gt;
+                    &lt;li&gt;MediaPlayer.framwork&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;InMobi&lt;/td&gt;
+            &lt;td&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;MessageUI.framework&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;iAd&lt;/td&gt;
+            &lt;td&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;iAd.framework&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;SmartMad 亿动智道&lt;/td&gt;
+            &lt;td&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;AudioToolbox.framework&lt;/li&gt;
+                    &lt;li&gt;AVFoundation.framework&lt;/li&gt;
+                    &lt;li&gt;CoreMotion.framework&lt;/li&gt;
+                    &lt;li&gt;CoreTelephony.framework&lt;/li&gt;
+                    &lt;li&gt;MediaPlayer.framwork&lt;/li&gt;
+                    &lt;li&gt;libsqlite3.0.dylib&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Vpon&lt;/td&gt;
+            &lt;td&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Security.framework&lt;/li&gt;
+                    &lt;li&gt;MessageUI.framework&lt;/li&gt;
+                    &lt;li&gt;MapKit.framework&lt;/li&gt;                   
+                    &lt;li&gt;CoreMedia.framework&lt;/li&gt;
+                    &lt;li&gt;CoreVideo.framework&lt;/li&gt;
+                    &lt;li&gt;AudioToolbox.framework&lt;/li&gt;
+                    &lt;li&gt;AVFoundation.framework&lt;/li&gt;
+                    &lt;li&gt;AddressBook.framework&lt;/li&gt;
+                    &lt;li&gt;MobileCoreServices.framework&lt;/li&gt;               
+                    &lt;li&gt;CoreData.framework&lt;/li&gt;
+                    &lt;li&gt;CoreTelephony.framework&lt;/li&gt;
+                    &lt;li&gt;CoreFoundation.framework&lt;/li&gt;
+                    &lt;li&gt;libiconv.dylib&lt;/li&gt;
+                    &lt;li&gt;libsqlite3.0.dylib&lt;/li&gt;
+                &lt;/ul&gt;
+                Vpon 添加使用 Apon (用于地理定位，便于广告精准投放) 请参考：&lt;a href=&quot;http://wiki.vpon.com/w/index.php?title=IPhone_Apon_SDK_%E6%89%8B%E5%86%8A&quot; target=&quot;_blank&quot;&gt;Vpon 参考文档&lt;/a&gt;
+                由于 Vpon 广告平台当前版本的 SDK 没有提供广告点击时调用的接口和广告内容窗口关闭时调用的接口，因此在果合上无法记录相应数据，但不影响在该广告平台上的数据。
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;微云&lt;/td&gt;
+            &lt;td&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;MediaPlayer.framework&lt;/li&gt;
+                &lt;/ul&gt;
+                需要在应用程序 Target 的 Build Setting 里双击 Other Linker Flags，添加选项 -ObjC 和 -all_load。
+                由于微云（WiYun）广告平台当前版本的SDK配置与哇棒（Wooboo）广告平台有冲突，所以两个广告平台不能同时使用。
+                由于微云（WiYun）广告平台当前版本的SDK没有提供广告点击时调用的接口和广告内容窗口关闭时调用的接口，因此在果合上无法记录相应数据，但不影响在该广告平台上的数据。
+                
+            &lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;哇棒&lt;/td&gt;
+            &lt;td&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;MessageUI.framework&lt;/li&gt;
+                    &lt;li&gt;MapKit.framework&lt;/li&gt;                   
+                    &lt;li&gt;MediaPlayer.framework&lt;/li&gt;
+                &lt;/ul&gt;
+                由于哇棒（Wooboo）广告平台当前版本的SDK没有提供广告点击时调用的接口和广告内容窗口关闭时调用的接口，因此在果合上无法记录相应数据，但不影响在该广告平台上的数据。
+            &lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Millennial Media&lt;/td&gt;
+            &lt;td&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;MediaPlayer.framework&lt;/li&gt;
+                    &lt;li&gt;AudioToolbox.framework&lt;/li&gt;
+                    &lt;li&gt;AVFoundation.framework&lt;/li&gt;
+                &lt;/ul&gt;
+            由于 Millennial Media 广告平台当前版本的SDK配置与哇棒（Wooboo）广告平台有冲突，所以两个广告平台不能同时使用。
+            &lt;/td&gt; 
+        &lt;/tr&gt;       
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;h2&gt;在你的工程代码中使用果合 SDK&lt;/h2&gt;
+
+&lt;h3&gt;继承 GHAdViewDelegate，定义广告位&lt;/h3&gt;
+
+&lt;p&gt;选择将要显示果合广告位的指定 ViewController，在 ViewController.h 中继承 GHAdViewDelegate，并定义广告位，参考如下代码段。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#import &amp;lt;UIKit/UIKit.h&amp;gt;
+#import &quot;GHAdView.h&quot;
+#import &quot;GHAdViewDelegate.h&quot;
+@interface GuoHeProSDKSample_iPhoneViewController : UIViewController                                    &amp;lt;GHAdViewDelegate&amp;gt;
+{
+  //广告位1
+  GHAdView *ghAdView1;
+  //广告位2
+  GHAdView *ghAdView2;
+}
+@property (nonatomic, retain) GHAdView *ghAdView1;
+@property (nonatomic, retain) GHAdView *ghAdView2;
+@end    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;请在 ViewController.m 中定义相应的 ghAdView 属性，并在 dealloc 方法中 release 它们。&lt;/p&gt;
+
+&lt;h3&gt;实现 GHAdViewDelegate 的必选方法&lt;/h3&gt;
+
+&lt;p&gt;在选定的 ViewController.m 中实现 GHAdViewDelegate 的方法， viewControllerForPresentingModalView 为必需实现，其他方法为可选实现，参考如下代码段。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#pragma mark -GHAdViewDelegate required method
+- (UIViewController *)viewControllerForPresentingModalView
+{
+  return self;
+}
+//注: 如果继承GHAdViewDelegate的文件不是ViewController，是AppDelegate，请将return self 改为 return [self viewControllerForPresentingModalView]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;初始化广告位，请求广告, 暂停广告请求&lt;/h3&gt;
+
+&lt;p&gt;在 ViewController 适当的代码位置(例如 viewDidLoad 方法中)添加代码，进行初始化广告位、请求广告和暂停广告请求的操作，参考如下代码段。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    //创建广告位1
+    ghAdView1 = [[GHAdView alloc] initWithAdUnitId:@&quot;65d5c1fed049c02da59e48caae0c6ee9&quot; size:CGSizeMake(320.0, 50.0)];
+    //设置委托
+    ghAdView1.delegate = self;
+    //请求广告
+    [ghAdView1 loadAd];
+    //设置frame并添加到View中
+    ghAdView1.frame = CGRectMake(0.0,0.0,320.0, 50.0);
+    [self.view addSubview:ghAdView1];
+
+    //创建广告位2
+    ghAdView2 = [[GHAdView alloc] initWithAdUnitId:@&quot;e220084a61e0b5d49a403122569d79e7&quot; size:CGSizeMake(250.0, 300.0)];
+    ghAdView2.delegate = self;
+    [ghAdView2 loadAd];
+    ghAdView2.frame = CGRectMake(35.0,60.0,250, 300.0);
+    [self.view addSubview:ghAdView2];
+
+    //创建广告位3
+    ghAdView3 = [[GHAdView alloc] initWithAdUnitId:@&quot;dcd41b7048dd16a7d201cb5bfa4593ec&quot; size:CGSizeMake(320.0, 100.0)];
+    ghAdView3.delegate = self;
+    [ghAdView3 loadAd];
+    ghAdView3.frame = CGRectMake(0.0,360.0,320.0, 100.0);
+    [self.view addSubview:ghAdView3];
+}
+//暂停广告请求
+-(void)stopTheAdRequest
+{
+    [ghAdView1 stopAdRequest];
+}
+
+//恢复广告请求
+-(void)resumeTheAdRequest
+{
+    [ghAdView1 resumeAdRequest];
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;实现 GHAdViewDelegate 的可选方法&lt;/h3&gt;
+
+&lt;p&gt;GHAdViewDelegate 中的可选方法包括加载广告失败时调用的接口、加载广告成功时调用的接口、广告点击出现内容窗口时调用的接口、广告内容窗口关闭时调用的接口、广告位的关闭按钮被点击时调用的接口，开发者可以根据自己的需要实现这些接口。接口示例代码如下:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@optional
+/*
+ * These callbacks notify you regarding whether the ad view (un)successfully loaded an ad.
+ */
+- (void)adViewDidFailToLoadAd:(GHAdView *)view;
+- (void)adViewDidLoadAd:(GHAdView *)view;
+
+
+/*
+ * These callbacks are triggered when the ad view is about to present/dismiss a modal view. If your application may be disrupted by these actions, you can use these notifications to handle them (for example, a game might need to pause/unpause).
+ */
+- (void)willPresentModalViewForAd:(GHAdView *)view;
+- (void)didDismissModalViewForAd:(GHAdView *)view;
+
+
+/*
+ * This method is set user's current location
+ */
+- (CLLocation *)locationInfo;
+
+
+/*
+ * This method is called when the close button on adview is clicked.
+ */
+- (void)didClosedAdView:(GHAdView *)view;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;设置自定义定向字段&lt;/h3&gt;
+
+&lt;p&gt;对应 Web 端提供的自定义定向功能(参见注解)，SDK 端提供用户为广告位设置自定义定向字段的方法。只需在相应的位置添加如下代码即可，用户类型和对应的 Target Key 需要开发者定义。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//创建广告位1
+ghAdView1 = [[GHAdView alloc] initWithAdUnitId:@&quot;65d5c1fed049c02da59e48caae0c6ee9&quot; size:CGSizeMake(320.0, 50.0)];
+//设置委托
+ghAdView1.delegate = self;
+     //设置自定义定向字段
+if (用户类型1) {
+    [ghAdView1 setCustomerTargetKey:@&quot;Target Key 1&quot;];
+} else if (用户类型2) {
+    [ghAdView1 setCustomerTargetKey:@&quot;Target Key 2&quot;];
+} else {
+    [ghAdView1 setCustomerTargetKey:@&quot;Target Key 3&quot;];
+}
+//请求广告
+[ghAdView1 loadAd];
+//设置frame并添加到View中
+ghAdView1.frame = CGRectMake(0.0,0.0,320.0, 50.0);
+[self.view addSubview:ghAdView1];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;自定义定向功能: 用以满足应用的特殊目标定向的需求 。用户可以在 Web 端为广告定义多个自定义定向字段(以逗号分隔，例如 key1, key2)；在应用中，可以通过为广告位设置一个自定义定向字段(例如 key1)对用户群做定向投放。规则举例: 广告A设置的自定义定向字段为 key1,key2，用户群a设置的定向字段为key1，用户群 b 未设置定向字段，用户群 c 设置定向字段为 key2，则 a 和 c 可以看到广告 A，b则看不到。
+ &lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>为什么我的 iOS 应用在嵌入果合 SDK 后无法编译？</title>
+   <link href="http://help.guohead.com/ios/ios-compiling-error.html"/>
+   <updated>2011-12-28T00:00:00+08:00</updated>
+   <id>http://neotalks.org/ios/ios-compiling-error</id>
+   <content type="html">&lt;p&gt;这个问题可能有很多种情况，常见的几种解决方法是：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;JSON 框架重复，确保工程中只有一份 JSON 文件夹&lt;/li&gt;
+&lt;li&gt;微云需要在应用程序 Target 的 Build Setting 里双击 Other Linker Flags，添加选项 -ObjC 和 -all_load，哇棒则不能添加&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>如何在果合进行广告配置？</title>
+   <link href="http://help.guohead.com/mediation/how-to-config-ads.html"/>
+   <updated>2011-12-28T00:00:00+08:00</updated>
+   <id>http://neotalks.org/mediation/how-to-config-ads</id>
+   <content type="html">&lt;h2&gt;如何在果合进行广告配置？&lt;/h2&gt;
+
+&lt;p&gt;在果合用用户名密码登录后，在应用面板界面，选择左侧对应的广告位，然后点击右侧的广告配置按钮即可。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/dashboard-ad-config.png&quot; alt=&quot;广告配置界面截图&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>帮你玩转果合的 12 大问题</title>
+   <link href="http://help.guohead.com/getting-started/faq.html"/>
+   <updated>2011-12-28T00:00:00+08:00</updated>
+   <id>http://neotalks.org/getting-started/faq</id>
+   <content type="html">&lt;h2&gt;什么是果合?&lt;/h2&gt;
+
+&lt;p&gt;果合是一个帮助手机应用开发者集合众多优秀广告平台的免费工具。通过它，你将可以自由设定各个广告的展示频率、优先级等等，从而实现你广告收益的最大化。它还能帮助你制定自己的软件广告，并和其他的广告平台一起在你的软件中展示，这样就能为你其他的软件带来更多的下载。&lt;/p&gt;
+
+&lt;h2&gt;果合如何帮助开发者提高收入?&lt;/h2&gt;
+
+&lt;p&gt;您首先应该对移动广告的收入公式有所了解，广告收入(以CPC方式计价)=广告请求次数(request)&lt;em&gt;填充率(fill rate)&lt;/em&gt;点击率(CTR)*单次点击单价(CPC)。果合通过聚合多个广告平台，将平均填充率提升到100%，同时开发者可以根据后台详尽的数据报表自主选择点击率和单次点击单价较高的广告平台。&lt;/p&gt;
+
+&lt;h2&gt;果合的广告聚合原理是什么？&lt;/h2&gt;
+
+&lt;p&gt;根据您在果合设置的优先级，先请求优先级为标准的A广告平台，当A请求不到广告的时候，会立刻请求B广告平台。保证每次请求都能请求到广告。&lt;/p&gt;
+
+&lt;h2&gt;果合广告聚合支持哪些广告平台?&lt;/h2&gt;
+
+&lt;p&gt;参见：&lt;a href=&quot;./getting-started/ad-networks-supported.html/&quot;&gt;果合目前支持的广告平台&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;我们会不断添加更多优秀的广告平台，为开发者提供更多更好的选择。&lt;/p&gt;
+
+&lt;h2&gt;自主广告是什么？如何使我获益？&lt;/h2&gt;
+
+&lt;p&gt;自主广告是由您自主发布和管理的一种广告形式。它可以轻松帮您在自己火爆的 app 上推广其他 app。而且这完全是免费的。&lt;/p&gt;
+
+&lt;h2&gt;使用果合设置我的 app 需要多长时间？&lt;/h2&gt;
+
+&lt;p&gt;大多数开发者可以在一个小时内完成广告的设置。您可以参照我们准备的&lt;a href=&quot;http://guohead.com/res/docs/help.pdf&quot;&gt;使用说明文档&lt;/a&gt;进行。&lt;/p&gt;
+
+&lt;h2&gt;果合如何选择广告平台?&lt;/h2&gt;
+
+&lt;p&gt;果合在选择集成某一家广告平台之前，会对其收入稳定性、数据透明性等方面进行考查，同时会在开发者群体中进行抽样调查，根据调查结果评估是否集成此家广告平台，从而保证开发者通过果合使用的都是优质的广告平台。&lt;/p&gt;
+
+&lt;h2&gt;果合支持哪些手机操作系统?&lt;/h2&gt;
+
+&lt;p&gt;目前支持 Google Android 、iOS 平台，其他平台稍后将会陆续上线。&lt;/p&gt;
+
+&lt;h2&gt;果合是否与开发者分成，如果不，怎么盈利?&lt;/h2&gt;
+
+&lt;p&gt;果合开始于我们创业团队内部一个工程师自己使用的广告优化工具，通过 eat our our own dogfood，我们逐渐意识到这个工具可以帮助更多的移动应用开发者从自己的 app 中获得收益。因此，我们不会通过和开发者分成的方式来盈利，现在如此，今后也是如此。我们希望从果合目前的产品形态开始，探索更多移动广告的可能性，提高广告的覆盖面和精准度，开拓真正创新和可持续的盈利方式。&lt;/p&gt;
+
+&lt;h2&gt;使用果合会改变我从广告商那里获得收益的方式吗?&lt;/h2&gt;
+
+&lt;p&gt;您依然还是直接从各个广告商获得广告盈利，果合不会影响您与其他广告平台的支付方式。&lt;/p&gt;
+
+&lt;h2&gt;果合会让我的软件变得很慢吗?&lt;/h2&gt;
+
+&lt;p&gt;果合的 SDK 本身只有几十 KB 大小，所有果合的计算全部在我们的云端服务器完成的。本地客户端只是需要发送广告请求，并接受广告服务器的反馈。您在果合网站下载的 SDK 包实际上还包括了喝多其它广告平台的 SDK 包，因而增加了大小。&lt;/p&gt;
+
+&lt;h2&gt;果合的稳定性如何?&lt;/h2&gt;
+
+&lt;p&gt;我们会定期对果合的广告服务器进行压力测试，目前我们的服务器可以承受每秒钟千万次广告请求。这样的稳定性足以服务大规模用户量级的应用。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>如何在广告平台审核期间设置广告配比？</title>
+   <link href="http://help.guohead.com/tips/config-for-ad-network-approval.html"/>
+   <updated>2011-12-28T00:00:00+08:00</updated>
+   <id>http://neotalks.org/tips/config-for-ad-network-approval</id>
+   <content type="html">&lt;h2&gt;如何在广告平台审核期间设置广告配比？&lt;/h2&gt;
+
+&lt;p&gt;提交广告平台审核的过程中至少调整到百分之十五以上优先级设置为“标准”为宜！通过审核之后则不限制。例：提交给多盟审核的时候，则在果合后台，多盟的优先级设置为“标准”且比例不低于百分之十五。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>果合整合了哪些广告平台？</title>
+   <link href="http://help.guohead.com/getting-started/ad-networks-supported.html"/>
+   <updated>2011-12-28T00:00:00+08:00</updated>
+   <id>http://neotalks.org/getting-started/ad-networks-supported</id>
+   <content type="html">&lt;p&gt;新果合目前整合了 13 家广告平台，具体列表如下：&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;广告平台&lt;/th&gt;
+            &lt;th&gt;链接&lt;/th&gt;
+            &lt;th&gt;Android&lt;/th&gt;
+            &lt;th&gt;iOS&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;AdMob&lt;/td&gt;
+            &lt;td&gt;http://admob.com&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;iAd&lt;/td&gt;
+            &lt;td&gt;http://developer.apple.com/iad/&lt;/td&gt;
+            &lt;td&gt;不支持&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Millennial Media&lt;/td&gt;
+            &lt;td&gt;https://developer.millennialmedia.com&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Baidu&lt;/td&gt;
+            &lt;td&gt;http://munion.baidu.com&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+            &lt;td&gt;不支持&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;亿动智道&lt;/td&gt;
+            &lt;td&gt;http://www.smartmad.com&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;多盟&lt;/td&gt;
+            &lt;td&gt;http://domob.cn&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;微云&lt;/td&gt;
+            &lt;td&gt;http://www.wiyun.com&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;易传媒&lt;/td&gt;
+            &lt;td&gt;http://mobile.adchina.com/AboutUs/index.aspx&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Vpon&lt;/td&gt;
+            &lt;td&gt;http://www.vpon.com/zh-cn/index.html&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;有米&lt;/td&gt;
+            &lt;td&gt;http://www.youmi.net&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;哇棒&lt;/td&gt;
+            &lt;td&gt;http://www.wooboo.com.cn&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;安沃&lt;/td&gt;
+            &lt;td&gt;http://www.adwo.com&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;AdSage&lt;/td&gt;
+            &lt;td&gt;http://www.mobisage.com/&lt;/td&gt;
+            &lt;td&gt;不支持&lt;/td&gt;
+            &lt;td&gt;支持&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>什么是摇摇广告位？</title>
+   <link href="http://help.guohead.com/ad-serving/whats-shake-ad.html"/>
+   <updated>2011-12-27T00:00:00+08:00</updated>
+   <id>http://neotalks.org/ad-serving/whats-shake-ad</id>
+   <content type="html">&lt;h2&gt;摇摇广告位是什么意思？&lt;/h2&gt;
+
+&lt;p&gt;摇摇广告位是果合设计的一种新型的广告位，不占用应用的界面空间。平时，这个广告位是隐藏的，在用户摇动手机的时候，广告位会跳出，开始展示广告。这个广告位适合结合一些有趣的功能设计，增强广告的有趣性。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>什么是广告位？我能建立多个广告位吗？</title>
+   <link href="http://help.guohead.com/ad-serving/whats-ad-unit.html"/>
+   <updated>2011-12-27T00:00:00+08:00</updated>
+   <id>http://neotalks.org/ad-serving/whats-ad-unit</id>
+   <content type="html">&lt;h2&gt;我能建立多个广告位吗？&lt;/h2&gt;
+
+&lt;p&gt;是的。在新果合中，广告位被设计成是一个广告的容器，每个应用都可以设置多个位置，放置在应用的合适位置。广告位在未投放广告的时候，是默认隐藏的，不会遮挡用户界面。而在果合的应用面板内投放广告后，则开始展示广告。&lt;/p&gt;
+
+&lt;p&gt;您可以在果合的应用面板界面中，在任何一个应用中，选择界面右上角的添加广告位开始建立广告位。在建立了广告位后，您需要向这个广告位中投放广告以获得广告展示：在应用面板中，选择需要投放的广告位（左侧导航），然后在右侧选择广告配置 - 投放广告 / 配置广告平台。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>广告优先级：标准和补余</title>
+   <link href="http://help.guohead.com/ad-serving/priority-of-ads.html"/>
+   <updated>2011-12-27T00:00:00+08:00</updated>
+   <id>http://neotalks.org/ad-serving/priority-of-ads</id>
+   <content type="html">&lt;h2&gt;标准跟补余有什么区别？&lt;/h2&gt;
+
+&lt;p&gt;标准和补余是果合为不同的广告源设置的优先级，决定了不同广告来源被调取的先后顺序。一般而言，设置为标准的广告源会优先于补余的广告源，只有在标准广告源完全请求不到广告的时候，果合才会去请求补余的广告源。&lt;/p&gt;
+
+&lt;p&gt;请看下面的一个例子：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自主广告1 / 标准 / 20%&lt;/li&gt;
+&lt;li&gt;广告平台1 / 标准 / 30%&lt;/li&gt;
+&lt;li&gt;广告平台2 / 标准 / 50%&lt;/li&gt;
+&lt;li&gt;自主广告2 / 补余&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;在这个例子中，果合会优先从自主广告1、广告平台1和广告平台2中按照预设的比例进行广告调取，但是，如果这三个广告源都没有广告返回（广告平台可能填充率不足，而自主广告可能设置了投放频度上限），则果合会调取自主广告2进行“补余”展示。&lt;/p&gt;
+
+&lt;p&gt;这样看来，补余的设置一般用于进行“保底”的广告展示，保证该广告位内一直有广告进行展示，不会浪费流量。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>果合是一个移动广告平台吗？</title>
+   <link href="http://help.guohead.com/getting-started/is-gh-ad-network.html"/>
+   <updated>2011-12-27T00:00:00+08:00</updated>
+   <id>http://neotalks.org/getting-started/is-gh-ad-network</id>
+   <content type="html">&lt;h2&gt;果合是一个移动广告平台吗？&lt;/h2&gt;
+
+&lt;p&gt;简单回答：不是。&lt;/p&gt;
+
+&lt;p&gt;移动广告平台和互联网时代的广告联盟相似。通过在应用中置入广告 SDK 实现在运行应用时候展示由广告平台提供的广告。关键的特征在于开发者并不能控制展示广告的内容。&lt;/p&gt;
+
+&lt;p&gt;果合移动广告向开发者提供的是广告聚合和广告管理功能：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;广告聚合：把多家广告平台的广告投放聚合在一个 SDK 内，开发者可以在果合的应用面板内自由调配投放的优先级、比例和投放对象，提高点击率和填充率&lt;/li&gt;
+&lt;li&gt;广告管理：在广告聚合的基础上，为优质应用提供了更为强大的广告投放管理系统，包括广告定向投放、排期、数据报告等多种功能&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;果合一直以开发者的广告收益最大化为使命，在定位上和移动广告平台作为广告主和开发者之间的中间层角色不同。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>果合广告聚合如何提升我的广告收入？</title>
+   <link href="http://help.guohead.com/getting-started/how-guohe-improves-my-income.html"/>
+   <updated>2011-12-27T00:00:00+08:00</updated>
+   <id>http://neotalks.org/getting-started/how-guohe-improves-my-income</id>
+   <content type="html">&lt;h2&gt;果合的广告聚合功能如何提升我的广告收入？&lt;/h2&gt;
+
+&lt;p&gt;果合的广告聚合功能可以智能向多家广告平台进行广告请求，使得更多的广告显示在应用内，减少了广告填充量不足的情况，提高了填充率。同时，来自多家广告平台的广告填充降低了用户因为重复看到单一广告产生的点击疲劳，提高了点击率。果合同时提供了多重维度的定向投放选项，帮助开发者设置不同广告投放的人群。最后，果合基于海量数据的智能优化算法可以动态优化您的广告投放。&lt;/p&gt;
+
+&lt;p&gt;以上几点的综合效果是开发者应用广告收入的提升。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>果合的广告聚合和广告管理有什么区别？</title>
+   <link href="http://help.guohead.com/getting-started/difference-btw-mediation-serving.html"/>
+   <updated>2011-12-27T00:00:00+08:00</updated>
+   <id>http://neotalks.org/getting-started/difference-btw-mediation-serving</id>
+   <content type="html">&lt;h2&gt;果合的广告聚合和广告管理有什么区别？&lt;/h2&gt;
+
+&lt;p&gt;果合现在向开发者提供两种移动广告功能：广告聚合和广告管理。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;广告聚合&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;广告聚合是指通过整合多家广告平台，并提供设置不同平台广告投放的优先级和比例能参数，实现最大化广告填充率。果合作为中国最早创立和最为创新的广告聚合优化平台，已经为超过 5000 个开发者提供广告聚合服务。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;广告管理&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;广告管理是在广告聚合的基础上，给优质应用的开发者以更多高级选项，以全面管理不同类型的广告，可以支持应用推广、品牌营销和广告平台投放等多种目的的管理系统。目前，已经有包括 Weico 在内的多个大型应用使用果合的系统进行广告管理。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>果合 Android SDK 使用文档</title>
+   <link href="http://help.guohead.com/android/android-sdk-doc.html"/>
+   <updated>2011-12-27T00:00:00+08:00</updated>
+   <id>http://neotalks.org/android/android-sdk-doc</id>
+   <content type="html">&lt;p&gt;本文档用于 Android 开发者在应用中整合果合移动广告 SDK。&lt;/p&gt;
+
+&lt;h2&gt;配置果合 SDK&lt;/h2&gt;
+
+&lt;h3&gt;SDK 文件内容&lt;/h3&gt;
+
+&lt;p&gt;文件集中包含有：&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;文件名称&lt;/th&gt;
+            &lt;th&gt;文件内容&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Libs 文件夹&lt;/td&gt;
+            &lt;td&gt;果合 Android SDK 和平台广告 SDK&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Demo 文件夹&lt;/td&gt;
+            &lt;td&gt;果合 Android SDK 程序样例&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Adapters 文件夹&lt;/td&gt;
+            &lt;td&gt;广告平台 SDK 和果合提供的适配开放源码&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;GuoHe_Integration_Android.pdf&lt;/td&gt;
+            &lt;td&gt;Android SDK更新日志（本文档）&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;gh_closebutton.png&lt;/td&gt;
+            &lt;td&gt;关闭按钮图片&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;h3&gt;添加果合 SDK 文件到你的工程中&lt;/h3&gt;
+
+&lt;p&gt;将文件集中的libs文件夹复制到项目工程的根目录下。打开Eclipse，右键点击项目，弹出菜单中选择“Properties(属性)”，选择左侧的“Java Build Path(Java 构建路径)”，然后选择“Libraries(库)”选项卡，点击“Add JARS...(添加JAR...)”，选择项目中的libs文件夹下的Guohe.jar，如果你需要使用平台广告，则还需要选择相应的平台广告的jar包。点击“OK(确定)”.此时项目下的&quot;Referenced Libraries(引入的库)&quot; 应包含Guohe.jar，以及已选择的平台广告的jar包。相关截图如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/android-add-libs.png&quot; alt=&quot;添加 Jar&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/android-add-libs2.png&quot; alt=&quot;添加 Jar&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;在您的工程代码中使用果合SDK&lt;/h2&gt;
+
+&lt;h3&gt;添加相应文件&lt;/h3&gt;
+
+&lt;h4&gt;添加 Adapter 文件&lt;/h4&gt;
+
+&lt;p&gt;如果您只想开通品牌广告或者自主广告，请忽略此步骤。如果您想开通平台广告，则右键点击项目，选择”New（新建）“，弹出菜单中选择“Package（包）”，在“Name(名称)”中输入：com.guohead.sdk.adapters，点击“Finish（完成）”。在下载的文件集中的Adapters文件夹下找到您想要开通的平台广告对应的Adapter类，将其复制到项目的com.guohead.sdk.adapters包下。相关截图如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/android-add-adapter.png&quot; alt=&quot;添加 Adapter&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/android-add-adapter2.png&quot; alt=&quot;添加 Adapter&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;注：您也可以通过项目引用等方式引入需要的Adapter文件，该方法可以查看网上相关资料，此处不再赘述。&lt;/p&gt;
+
+&lt;h4&gt;添加关闭按钮图片&lt;/h4&gt;
+
+&lt;p&gt;将文件集中的图片文件 gh_closebutton.png 复制到项目的 drawable 文件夹下。&lt;/p&gt;
+
+&lt;h3&gt;创建广告位&lt;/h3&gt;
+
+&lt;h4&gt;用 XML 布局&lt;/h4&gt;
+
+&lt;p&gt;在 XML 布局文件中适当位置添加如下代码创建广告位：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;com.guohead.sdk.GHView android:id=&quot;@+id/mGHView_1&quot; android:layout_height=&quot;wrap_content&quot; android:layout_width=&quot;wrap_content&quot;&amp;gt;&amp;lt;/com.guohead.sdk.GHView&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注：果合 Android SDK 1.1版本增加了广告位关闭按钮的设置，开发着在网站上创建/编辑广告位时可以为广告位设置关闭按钮样式为“广告位内”、“右上角”、“无”。#### 用代码布局&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;GHView  ghView_1=new GHView(this);                              ghView_1.setAdUnitId(&quot;果合ID&quot;);                                   ghView_1.startLoadAd();                                     
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;将 ghView_1 添加到你想要的地方。&lt;/p&gt;
+
+&lt;h3&gt;初始化广告位，请求广告&lt;/h3&gt;
+
+&lt;p&gt;在 Java 文件中嵌入如下代码进行广告位的初始化：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;GHView ghView_1;    ... ghView_1 = (GHView) findViewById(R.id.mGHView_1);   ghView_1.setAdUnitId(&quot;广告位ID&quot;);//设置广告位ID ghView_1.startLoadAd();//请求广告
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注意：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;将您在果合网站上获得到的广告位 ID，替换上述代码中的&quot;广告位ID&quot;。&lt;/li&gt;
+&lt;li&gt;该初始化广告位代码通常放在 Activity 的 onCreate() 方法中。&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;当界面退出时，需停止广告位请求广告，应该在 Activity 的 onDestroy() 方法中调用 destroy() 方法。代码如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;protected void onDestroy() {
+    // TODO Auto-generated method stub
+    super.onDestroy();
+    ghView_1.destroy();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;设置 AndroidManifest.xml 文件&lt;/h3&gt;
+
+&lt;h4&gt;添加权限&lt;/h4&gt;
+
+&lt;p&gt;在 AndroidManifest.xml 文件的 &amp;lt;/manifest&gt; 标签前添加如下代码。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&amp;gt;
+&amp;lt;uses-permission android:name=&quot;android.permission.READ_PHONE_STATE&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果您需要使用平台广告，还需要根据各平台文档要求选择性地添加如下权限：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot; /&amp;gt;
+&amp;lt;uses-permission android:name=&quot;android.permission.ACCESS_COARSE_LOCATION&quot; /&amp;gt;
+&amp;lt;uses-permission android:name=&quot;android.permission.ACCESS_FINE_LOCATION&quot; /&amp;gt;
+&amp;lt;uses-permission android:name=&quot;android.permission.READ_LOGS&quot; /&amp;gt;
+&amp;lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; /&amp;gt;
+&amp;lt;uses-permission android:name=&quot;android.permission.ACCESS_WIFI_STATE&quot; /&amp;gt;
+&amp;lt;uses-permission android:name=&quot;android.permission.READ_EXTERNAL_STORAGE&quot; /&amp;gt;
+&amp;lt;uses-permission android:name=&quot;android.permission.CALL_PHONE&quot; /&amp;gt;
+&amp;lt;!--哇棒还需要下面的权限--&amp;gt;
+&amp;lt;uses-permission android:name=&quot;android.permission.READ_SMS&quot; /&amp;gt;
+&amp;lt;uses-permission android:name=&quot;android.permission.READ_CONTACTS&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注：若有疑问，请查看相关平台 SDK 开发文档。&lt;/p&gt;
+
+&lt;h4&gt;添加 Activity 声明&lt;/h4&gt;
+
+&lt;p&gt;如果您只想开通品牌广告或者自主广告，请忽略此步骤。根据您想开通的平台广告，复制下面对应的 Activity 声明代码，粘贴到 &amp;lt;/application&gt; 标签前。&lt;/p&gt;
+
+&lt;p&gt;有米广告&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;!-- youmi begin --&amp;gt;
+&amp;lt;activity
+    android:configChanges=&quot;keyboard|keyboardHidden|orientation&quot;
+    android:name=&quot;net.youmi.android.AdActivity&quot;&amp;gt;
+&amp;lt;/activity&amp;gt;
+&amp;lt;!-- youmi end --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;多盟广告&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;!-- domob begin --&amp;gt;
+&amp;lt;activity
+    android:name=&quot;cn.domob.android.ads.DomobActivity&quot;
+    android:theme=&quot;@android:style/Theme.Translucent&quot; /&amp;gt;
+&amp;lt;!-- domob end --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;AdMob   &lt;!-- AdMob begin --&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;activity
+    android:configChanges=&quot;orientation|keyboard|keyboardHidden&quot;
+    android:name=&quot;com.google.ads.AdActivity&quot; /&amp;gt;
+&amp;lt;!-- AdMob end --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;AdWo 安沃广告   &lt;!-- Adwo begin --&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;activity android:name=&quot;com.adwo.adsdk.AdwoAdBrowserActivity&quot; /&amp;gt;
+&amp;lt;!-- Adwo end --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;InMobi  &lt;!-- Inmobi begin --&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;activity
+    android:configChanges=&quot;keyboardHidden|orientation|keyboard&quot;
+    android:name=&quot;com.inmobi.androidsdk.IMBrowserActivity&quot; /&amp;gt;
+&amp;lt;!-- Inmobi end --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;百度  &lt;!-- Baidu begin --&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;meta-data
+    android:name=&quot;BaiduMobAd_APP_ID&quot;
+    android:value=&quot;debug&quot; /&amp;gt;
+&amp;lt;meta-data
+    android:name=&quot;BaiduMobAd_APP_SEC&quot;
+    android:value=&quot;debug&quot; /&amp;gt;
+&amp;lt;activity
+    android:configChanges=&quot;keyboardHidden|orientation|keyboard&quot;
+    android:name=&quot;com.baidu.AppActivity&quot;&amp;gt;
+&amp;lt;/activity&amp;gt;
+&amp;lt;!-- Baidu end --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Vpon    &lt;!-- Vpon begin --&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;activity android:configChanges=&quot;orientation|keyboardHidden|navigation|keyboard&quot;
+    android:label=&quot;@string/app_name&quot;
+    android:name=&quot;com.vpon.adon.android.WebInApp&quot;
+    android:screenOrientation=&quot;portrait&quot; /&amp;gt;
+&amp;lt;!-- vpon end --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;哇棒广告    &lt;!-- wooboo begin --&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;activity
+    android:configChanges=&quot;orientation|keyboardHidden&quot;
+    android:name=&quot;com.wooboo.adlib_android.AdActivity&quot; /&amp;gt;
+&amp;lt;!-- wooboo end --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Millennial Media    &lt;!-- Millennial Media begin --&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;activity
+    android:configChanges=&quot;keyboardHidden|orientation|keyboard&quot;
+    android:name=&quot;com.millennialmedia.android.MMAdViewOverlayActivity&quot; &amp;gt;
+&amp;lt;/activity&amp;gt;
+&amp;lt;activity
+    android:configChanges=&quot;keyboardHidden|orientation|keyboard&quot;
+    android:name=&quot;com.millennialmedia.android.VideoPlayer&quot; &amp;gt;
+&amp;lt;/activity&amp;gt;
+&amp;lt;!-- Millennial Media end --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;监听广告位状态（可选）&lt;/h2&gt;
+
+&lt;p&gt;可以根据需要对每个广告位的状态进行监听，以便做出相应的处理。果合SDK提供了完善的监听机制。果合 SDK 提供了如下监听接口：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//监听广告展示前的状态。
+public interface OnAdWillLoadListener {
+    public void OnAdWillLoad(GHView m, String url); }
+//监听请求到广告的状态
+public interface OnAdLoadedListener {
+    public void OnAdLoaded(GHView m);   }
+//监听广告请求失败状态
+public interface OnAdFailedListener {
+    public void OnAdFailed(GHView m);   }
+//监听广告关闭状态
+public interface OnAdClosedListener {
+    public void OnAdClosed(GHView m);   }
+//监听广告点击状态
+public interface OnAdClickedListener {
+    public void OnAdClicked(GHView m);  }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;例如，如果你想要监听广告被点击事件，可以在适当位置加入如下类似代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ghView.setOnAdClickedListener(new OnAdClickedListener()     {
+    @Override
+    public void OnAdClicked(GHView arg0) {
+        Log.i(&quot;TAG&quot;,&quot;OnAdClicked&quot;);
+    }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;监听其他状态类似，具体您可以参看 Demo 中的代码，在此不再赘述。注意：由于很多广告平台没有提供监听广告被点击的接口，所以我们的 SDK 对广告点击的统计不是很精确。## 设置自定义定向（可选）&lt;/p&gt;
+
+&lt;p&gt;对应 Web 端提供的自定义定向功能(参见注解)，SDK 端提供用户为广告位设置自定义定向字段的方法。只需在相应的位置添加如下代码即可，对应的 Target Key 需要开发者定义。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ghView.setKeywords(&quot;Target Key &quot;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;自定义定向功能: 用以满足应用的特殊目标定向的需求 。用户可以在Web端为广告定义多个自定义定向字段(以逗号分隔，例如key1,key2)；在应用中，可以通过为广告位设置一个自定义定向字段(例如key1)对用户群做定向投放。规则举例: 广告A设置的自定义定向字段为key1,key2，用户群a设置的定向字段为key1，用户群b未设置定向字段，用户群c设置定向字段为key2，则a和c可以看到广告A，b则看不到。&lt;/p&gt;
+
+&lt;h2&gt;附录：GHView 接口列表&lt;/h2&gt;
+
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;startLoadAd()&lt;/td&gt;
+        &lt;td&gt;开始请求广告&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;pauseLoadAd()&lt;/td&gt;
+        &lt;td&gt;暂停请求广告，即暂停广告之间的切换。（注意：如果使用平台广告，最后显示的广告平台SDK若有自动刷新逻辑，这个广告平台将会继续刷新它自己的广告。果合SDK只暂停果合广告平台或者平台广告的切换。）&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;restartLoadAd()&lt;/td&gt;
+        &lt;td&gt;重新请求广告，即重新开始广告之间的切换。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;setAdUnitId(&quot;广告位ID &quot;)&lt;/td&gt;
+        &lt;td&gt;在开始请求广告之前必须设置广告位ID才能正确请求广告。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;setOnxxxListener&lt;/td&gt;
+        &lt;td&gt;设置广告状态监听器，详情请看监听广告位状态。&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>果合统计数据为什么和我在广告平台后台看到的数据不一致？</title>
+   <link href="http://help.guohead.com/mediation/analytics-difference.html"/>
+   <updated>2011-12-27T00:00:00+08:00</updated>
+   <id>http://neotalks.org/mediation/analytics-difference</id>
+   <content type="html">&lt;h2&gt;果合统计数据为什么和我在广告平台后台看到的数据不一致？&lt;/h2&gt;
+
+&lt;p&gt;通常而言，每个广告平台都有自己的一套去重算法，用以排除恶意点击和展示，以保护广告主的利益，在不同平台上，这套统计标准是不一样的。果合作为一个中立的平台，仅仅记录实际的展示数量，而不加入自己的去重算法。对开发者而言，果合提供的数据可以作为一个参考值，具体的结算的标准以广告平台为准。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>

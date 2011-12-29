@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>果合开发者帮助中心</title>
+ <link href="http://help.guohead.com/atom.xml" rel="self"/>
+ <link href="http://help.guohead.com"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://help.guohead.com</id>
+ <author>
+   <name>Guohe Ad</name>
+   <email>hi+dev@guohead.com</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://help.guohead.com{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://neotalks.org{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>
