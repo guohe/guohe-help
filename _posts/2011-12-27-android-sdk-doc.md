@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android SDK 使用文档
+title: 果合 Android SDK 使用文档
 category: android
 ---
 
