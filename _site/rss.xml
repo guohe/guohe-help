@@ -1,23 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
- 
- <title>果合开发者帮助中心</title>
- <link href="http://help.guohead.com/atom.xml" rel="self"/>
- <link href="http://help.guohead.com"/>
- <updated>2011-12-30T13:45:59+08:00</updated>
- <id>http://help.guohead.com</id>
- <author>
-   <name>Guohe Ad</name>
-   <email>hi+dev@guohead.com</email>
- </author>
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>果合开发者帮助中心</title>
+    <link>http://help.guohead.com/</link>
+    <atom:link href="http://help.guohead.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>果合开发者帮助中心</description>
+    <language>zh-CN</language>
+    <pubDate>Fri, 30 Dec 2011 13:45:59 +0800</pubDate>
+    <lastBuildDate>Fri, 30 Dec 2011 13:45:59 +0800</lastBuildDate>
 
- 
- <entry>
-   <title>果合新手详细使用文档</title>
-   <link href="http://help.guohead.com/getting-started/guohe-getting-started.html"/>
-   <updated>2011-12-29T00:00:00+08:00</updated>
-   <id>http://neotalks.org/getting-started/guohe-getting-started</id>
-   <content type="html">&lt;h2&gt;果合新手详细使用文档&lt;/h2&gt;
+    
+    <item>
+      <title>果合新手详细使用文档</title>
+      <link>http://help.guohead.com/getting-started/guohe-getting-started.html</link>
+      <pubDate>Thu, 29 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/getting-started/guohe-getting-started</guid>
+      <description>&lt;h2&gt;果合新手详细使用文档&lt;/h2&gt;
 
 &lt;h3&gt;添加应用&lt;/h3&gt;
 
@@ -54,39 +53,42 @@
 &lt;p&gt;您也可以点击“投放广告”并选择一个自主广告在您的广告位上显示，如下图。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../images/dashboard-ad-config.png&quot; alt=&quot;投放广告&quot; /&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>哪些广告平台需要审核才能展示广告？</title>
-   <link href="http://help.guohead.com/tips/which-ad-network-needs-approval.html"/>
-   <updated>2011-12-28T00:00:00+08:00</updated>
-   <id>http://neotalks.org/tips/which-ad-network-needs-approval</id>
-   <content type="html">&lt;h2&gt;哪些广告平台需要审核之后才能展示广告？&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>哪些广告平台需要审核才能展示广告？</title>
+      <link>http://help.guohead.com/tips/which-ad-network-needs-approval.html</link>
+      <pubDate>Wed, 28 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/tips/which-ad-network-needs-approval</guid>
+      <description>&lt;h2&gt;哪些广告平台需要审核之后才能展示广告？&lt;/h2&gt;
 
 &lt;p&gt;目前，除了微云，Vpon 之外大部分广告平台都需要提交审核。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>什么是 Publisher ID？</title>
-   <link href="http://help.guohead.com/mediation/whats-publisher-id.html"/>
-   <updated>2011-12-28T00:00:00+08:00</updated>
-   <id>http://neotalks.org/mediation/whats-publisher-id</id>
-   <content type="html">&lt;h2&gt;什么是 Publisher ID？&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>什么是 Publisher ID？</title>
+      <link>http://help.guohead.com/mediation/whats-publisher-id.html</link>
+      <pubDate>Wed, 28 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/mediation/whats-publisher-id</guid>
+      <description>&lt;h2&gt;什么是 Publisher ID？&lt;/h2&gt;
 
 &lt;p&gt;ID / 广告位ID / App ID 是各广告平台为应用生成的唯一标识，当您在广告平台创建应用成功时即可看到此唯一标识。您需要将ID填入到果合后台（应用面板 - 广告配置，见下图）才能展示来自该广告平台的广告。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../images/dashboard-publisher-id.png&quot; alt=&quot;Publisher ID&quot; /&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>为什么我的应用在测试中无法展示广告？</title>
-   <link href="http://help.guohead.com/mediation/testing-no-ads.html"/>
-   <updated>2011-12-28T00:00:00+08:00</updated>
-   <id>http://neotalks.org/mediation/testing-no-ads</id>
-   <content type="html">&lt;p&gt;为什么我的应用在测试中无法展示广告？&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>为什么我的应用在测试中无法展示广告？</title>
+      <link>http://help.guohead.com/mediation/testing-no-ads.html</link>
+      <pubDate>Wed, 28 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/mediation/testing-no-ads</guid>
+      <description>&lt;p&gt;为什么我的应用在测试中无法展示广告？&lt;/p&gt;
 
 &lt;p&gt;请用下面的步骤检查您的设置情况：&lt;/p&gt;
 
@@ -98,15 +100,16 @@
 &lt;li&gt;推荐测试网站 (www.testin.cn)&lt;/li&gt;
 &lt;/ol&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>果合 iOS SDK 使用文档</title>
-   <link href="http://help.guohead.com/ios/ios-sdk-doc.html"/>
-   <updated>2011-12-28T00:00:00+08:00</updated>
-   <id>http://neotalks.org/ios/ios-sdk-doc</id>
-   <content type="html">&lt;p&gt;本文档用于 iOS 开发者在应用中整合果合移动广告 SDK。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>果合 iOS SDK 使用文档</title>
+      <link>http://help.guohead.com/ios/ios-sdk-doc.html</link>
+      <pubDate>Wed, 28 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/ios/ios-sdk-doc</guid>
+      <description>&lt;p&gt;本文档用于 iOS 开发者在应用中整合果合移动广告 SDK。&lt;/p&gt;
 
 &lt;h2&gt;配置果合 SDK&lt;/h2&gt;
 
@@ -452,43 +455,46 @@ ghAdView1.frame = CGRectMake(0.0,0.0,320.0, 50.0);
 
 &lt;p&gt;自定义定向功能: 用以满足应用的特殊目标定向的需求 。用户可以在 Web 端为广告定义多个自定义定向字段(以逗号分隔，例如 key1, key2)；在应用中，可以通过为广告位设置一个自定义定向字段(例如 key1)对用户群做定向投放。规则举例: 广告A设置的自定义定向字段为 key1,key2，用户群a设置的定向字段为key1，用户群 b 未设置定向字段，用户群 c 设置定向字段为 key2，则 a 和 c 可以看到广告 A，b则看不到。
  &lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>为什么我的 iOS 应用在嵌入果合 SDK 后无法编译？</title>
-   <link href="http://help.guohead.com/ios/ios-compiling-error.html"/>
-   <updated>2011-12-28T00:00:00+08:00</updated>
-   <id>http://neotalks.org/ios/ios-compiling-error</id>
-   <content type="html">&lt;p&gt;这个问题可能有很多种情况，常见的几种解决方法是：&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>为什么我的 iOS 应用在嵌入果合 SDK 后无法编译？</title>
+      <link>http://help.guohead.com/ios/ios-compiling-error.html</link>
+      <pubDate>Wed, 28 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/ios/ios-compiling-error</guid>
+      <description>&lt;p&gt;这个问题可能有很多种情况，常见的几种解决方法是：&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;JSON 框架重复，确保工程中只有一份 JSON 文件夹&lt;/li&gt;
 &lt;li&gt;微云需要在应用程序 Target 的 Build Setting 里双击 Other Linker Flags，添加选项 -ObjC 和 -all_load，哇棒则不能添加&lt;/li&gt;
 &lt;/ol&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>如何在果合进行广告配置？</title>
-   <link href="http://help.guohead.com/mediation/how-to-config-ads.html"/>
-   <updated>2011-12-28T00:00:00+08:00</updated>
-   <id>http://neotalks.org/mediation/how-to-config-ads</id>
-   <content type="html">&lt;h2&gt;如何在果合进行广告配置？&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>如何在果合进行广告配置？</title>
+      <link>http://help.guohead.com/mediation/how-to-config-ads.html</link>
+      <pubDate>Wed, 28 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/mediation/how-to-config-ads</guid>
+      <description>&lt;h2&gt;如何在果合进行广告配置？&lt;/h2&gt;
 
 &lt;p&gt;在果合用用户名密码登录后，在应用面板界面，选择左侧对应的广告位，然后点击右侧的广告配置按钮即可。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../images/dashboard-ad-config.png&quot; alt=&quot;广告配置界面截图&quot; /&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>帮你玩转果合的 12 大问题</title>
-   <link href="http://help.guohead.com/getting-started/faq.html"/>
-   <updated>2011-12-28T00:00:00+08:00</updated>
-   <id>http://neotalks.org/getting-started/faq</id>
-   <content type="html">&lt;h2&gt;什么是果合?&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>帮你玩转果合的 12 大问题</title>
+      <link>http://help.guohead.com/getting-started/faq.html</link>
+      <pubDate>Wed, 28 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/getting-started/faq</guid>
+      <description>&lt;h2&gt;什么是果合?&lt;/h2&gt;
 
 &lt;p&gt;果合是一个帮助手机应用开发者集合众多优秀广告平台的免费工具。通过它，你将可以自由设定各个广告的展示频率、优先级等等，从而实现你广告收益的最大化。它还能帮助你制定自己的软件广告，并和其他的广告平台一起在你的软件中展示，这样就能为你其他的软件带来更多的下载。&lt;/p&gt;
 
@@ -537,26 +543,28 @@ ghAdView1.frame = CGRectMake(0.0,0.0,320.0, 50.0);
 &lt;h2&gt;果合的稳定性如何?&lt;/h2&gt;
 
 &lt;p&gt;我们会定期对果合的广告服务器进行压力测试，目前我们的服务器可以承受每秒钟千万次广告请求。这样的稳定性足以服务大规模用户量级的应用。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>如何在广告平台审核期间设置广告配比？</title>
-   <link href="http://help.guohead.com/tips/config-for-ad-network-approval.html"/>
-   <updated>2011-12-28T00:00:00+08:00</updated>
-   <id>http://neotalks.org/tips/config-for-ad-network-approval</id>
-   <content type="html">&lt;h2&gt;如何在广告平台审核期间设置广告配比？&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>如何在广告平台审核期间设置广告配比？</title>
+      <link>http://help.guohead.com/tips/config-for-ad-network-approval.html</link>
+      <pubDate>Wed, 28 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/tips/config-for-ad-network-approval</guid>
+      <description>&lt;h2&gt;如何在广告平台审核期间设置广告配比？&lt;/h2&gt;
 
 &lt;p&gt;提交广告平台审核的过程中至少调整到百分之十五以上优先级设置为“标准”为宜！通过审核之后则不限制。例：提交给多盟审核的时候，则在果合后台，多盟的优先级设置为“标准”且比例不低于百分之十五。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>果合整合了哪些广告平台？</title>
-   <link href="http://help.guohead.com/getting-started/ad-networks-supported.html"/>
-   <updated>2011-12-28T00:00:00+08:00</updated>
-   <id>http://neotalks.org/getting-started/ad-networks-supported</id>
-   <content type="html">&lt;p&gt;新果合目前整合了 13 家广告平台，具体列表如下：&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>果合整合了哪些广告平台？</title>
+      <link>http://help.guohead.com/getting-started/ad-networks-supported.html</link>
+      <pubDate>Wed, 28 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/getting-started/ad-networks-supported</guid>
+      <description>&lt;p&gt;新果合目前整合了 13 家广告平台，具体列表如下：&lt;/p&gt;
 
 &lt;table&gt;
     &lt;thead&gt;
@@ -650,39 +658,42 @@ ghAdView1.frame = CGRectMake(0.0,0.0,320.0, 50.0);
 
 
 
-</content>
- </entry>
- 
- <entry>
-   <title>什么是摇摇广告位？</title>
-   <link href="http://help.guohead.com/ad-serving/whats-shake-ad.html"/>
-   <updated>2011-12-27T00:00:00+08:00</updated>
-   <id>http://neotalks.org/ad-serving/whats-shake-ad</id>
-   <content type="html">&lt;h2&gt;摇摇广告位是什么意思？&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>什么是摇摇广告位？</title>
+      <link>http://help.guohead.com/ad-serving/whats-shake-ad.html</link>
+      <pubDate>Tue, 27 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/ad-serving/whats-shake-ad</guid>
+      <description>&lt;h2&gt;摇摇广告位是什么意思？&lt;/h2&gt;
 
 &lt;p&gt;摇摇广告位是果合设计的一种新型的广告位，不占用应用的界面空间。平时，这个广告位是隐藏的，在用户摇动手机的时候，广告位会跳出，开始展示广告。这个广告位适合结合一些有趣的功能设计，增强广告的有趣性。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>什么是广告位？我能建立多个广告位吗？</title>
-   <link href="http://help.guohead.com/ad-serving/whats-ad-unit.html"/>
-   <updated>2011-12-27T00:00:00+08:00</updated>
-   <id>http://neotalks.org/ad-serving/whats-ad-unit</id>
-   <content type="html">&lt;h2&gt;我能建立多个广告位吗？&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>什么是广告位？我能建立多个广告位吗？</title>
+      <link>http://help.guohead.com/ad-serving/whats-ad-unit.html</link>
+      <pubDate>Tue, 27 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/ad-serving/whats-ad-unit</guid>
+      <description>&lt;h2&gt;我能建立多个广告位吗？&lt;/h2&gt;
 
 &lt;p&gt;是的。在新果合中，广告位被设计成是一个广告的容器，每个应用都可以设置多个位置，放置在应用的合适位置。广告位在未投放广告的时候，是默认隐藏的，不会遮挡用户界面。而在果合的应用面板内投放广告后，则开始展示广告。&lt;/p&gt;
 
 &lt;p&gt;您可以在果合的应用面板界面中，在任何一个应用中，选择界面右上角的添加广告位开始建立广告位。在建立了广告位后，您需要向这个广告位中投放广告以获得广告展示：在应用面板中，选择需要投放的广告位（左侧导航），然后在右侧选择广告配置 - 投放广告 / 配置广告平台。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>广告优先级：标准和补余</title>
-   <link href="http://help.guohead.com/ad-serving/priority-of-ads.html"/>
-   <updated>2011-12-27T00:00:00+08:00</updated>
-   <id>http://neotalks.org/ad-serving/priority-of-ads</id>
-   <content type="html">&lt;h2&gt;标准跟补余有什么区别？&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>广告优先级：标准和补余</title>
+      <link>http://help.guohead.com/ad-serving/priority-of-ads.html</link>
+      <pubDate>Tue, 27 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/ad-serving/priority-of-ads</guid>
+      <description>&lt;h2&gt;标准跟补余有什么区别？&lt;/h2&gt;
 
 &lt;p&gt;标准和补余是果合为不同的广告源设置的优先级，决定了不同广告来源被调取的先后顺序。一般而言，设置为标准的广告源会优先于补余的广告源，只有在标准广告源完全请求不到广告的时候，果合才会去请求补余的广告源。&lt;/p&gt;
 
@@ -699,15 +710,16 @@ ghAdView1.frame = CGRectMake(0.0,0.0,320.0, 50.0);
 &lt;p&gt;在这个例子中，果合会优先从自主广告1、广告平台1和广告平台2中按照预设的比例进行广告调取，但是，如果这三个广告源都没有广告返回（广告平台可能填充率不足，而自主广告可能设置了投放频度上限），则果合会调取自主广告2进行“补余”展示。&lt;/p&gt;
 
 &lt;p&gt;这样看来，补余的设置一般用于进行“保底”的广告展示，保证该广告位内一直有广告进行展示，不会浪费流量。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>果合是一个移动广告平台吗？</title>
-   <link href="http://help.guohead.com/getting-started/is-gh-ad-network.html"/>
-   <updated>2011-12-27T00:00:00+08:00</updated>
-   <id>http://neotalks.org/getting-started/is-gh-ad-network</id>
-   <content type="html">&lt;h2&gt;果合是一个移动广告平台吗？&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>果合是一个移动广告平台吗？</title>
+      <link>http://help.guohead.com/getting-started/is-gh-ad-network.html</link>
+      <pubDate>Tue, 27 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/getting-started/is-gh-ad-network</guid>
+      <description>&lt;h2&gt;果合是一个移动广告平台吗？&lt;/h2&gt;
 
 &lt;p&gt;简单回答：不是。&lt;/p&gt;
 
@@ -722,28 +734,30 @@ ghAdView1.frame = CGRectMake(0.0,0.0,320.0, 50.0);
 
 
 &lt;p&gt;果合一直以开发者的广告收益最大化为使命，在定位上和移动广告平台作为广告主和开发者之间的中间层角色不同。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>果合广告聚合如何提升我的广告收入？</title>
-   <link href="http://help.guohead.com/getting-started/how-guohe-improves-my-income.html"/>
-   <updated>2011-12-27T00:00:00+08:00</updated>
-   <id>http://neotalks.org/getting-started/how-guohe-improves-my-income</id>
-   <content type="html">&lt;h2&gt;果合的广告聚合功能如何提升我的广告收入？&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>果合广告聚合如何提升我的广告收入？</title>
+      <link>http://help.guohead.com/getting-started/how-guohe-improves-my-income.html</link>
+      <pubDate>Tue, 27 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/getting-started/how-guohe-improves-my-income</guid>
+      <description>&lt;h2&gt;果合的广告聚合功能如何提升我的广告收入？&lt;/h2&gt;
 
 &lt;p&gt;果合的广告聚合功能可以智能向多家广告平台进行广告请求，使得更多的广告显示在应用内，减少了广告填充量不足的情况，提高了填充率。同时，来自多家广告平台的广告填充降低了用户因为重复看到单一广告产生的点击疲劳，提高了点击率。果合同时提供了多重维度的定向投放选项，帮助开发者设置不同广告投放的人群。最后，果合基于海量数据的智能优化算法可以动态优化您的广告投放。&lt;/p&gt;
 
 &lt;p&gt;以上几点的综合效果是开发者应用广告收入的提升。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>果合的广告聚合和广告管理有什么区别？</title>
-   <link href="http://help.guohead.com/getting-started/difference-btw-mediation-serving.html"/>
-   <updated>2011-12-27T00:00:00+08:00</updated>
-   <id>http://neotalks.org/getting-started/difference-btw-mediation-serving</id>
-   <content type="html">&lt;h2&gt;果合的广告聚合和广告管理有什么区别？&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>果合的广告聚合和广告管理有什么区别？</title>
+      <link>http://help.guohead.com/getting-started/difference-btw-mediation-serving.html</link>
+      <pubDate>Tue, 27 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/getting-started/difference-btw-mediation-serving</guid>
+      <description>&lt;h2&gt;果合的广告聚合和广告管理有什么区别？&lt;/h2&gt;
 
 &lt;p&gt;果合现在向开发者提供两种移动广告功能：广告聚合和广告管理。&lt;/p&gt;
 
@@ -754,15 +768,16 @@ ghAdView1.frame = CGRectMake(0.0,0.0,320.0, 50.0);
 &lt;p&gt;&lt;em&gt;广告管理&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;广告管理是在广告聚合的基础上，给优质应用的开发者以更多高级选项，以全面管理不同类型的广告，可以支持应用推广、品牌营销和广告平台投放等多种目的的管理系统。目前，已经有包括 Weico 在内的多个大型应用使用果合的系统进行广告管理。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>果合 Android SDK 使用文档</title>
-   <link href="http://help.guohead.com/android/android-sdk-doc.html"/>
-   <updated>2011-12-27T00:00:00+08:00</updated>
-   <id>http://neotalks.org/android/android-sdk-doc</id>
-   <content type="html">&lt;p&gt;本文档用于 Android 开发者在应用中整合果合移动广告 SDK。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>果合 Android SDK 使用文档</title>
+      <link>http://help.guohead.com/android/android-sdk-doc.html</link>
+      <pubDate>Tue, 27 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/android/android-sdk-doc</guid>
+      <description>&lt;p&gt;本文档用于 Android 开发者在应用中整合果合移动广告 SDK。&lt;/p&gt;
 
 &lt;h2&gt;配置果合 SDK&lt;/h2&gt;
 
@@ -1050,19 +1065,21 @@ public interface OnAdClickedListener {
     &lt;/tr&gt;
 &lt;/table&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>果合统计数据为什么和我在广告平台后台看到的数据不一致？</title>
-   <link href="http://help.guohead.com/mediation/analytics-difference.html"/>
-   <updated>2011-12-27T00:00:00+08:00</updated>
-   <id>http://neotalks.org/mediation/analytics-difference</id>
-   <content type="html">&lt;h2&gt;果合统计数据为什么和我在广告平台后台看到的数据不一致？&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>果合统计数据为什么和我在广告平台后台看到的数据不一致？</title>
+      <link>http://help.guohead.com/mediation/analytics-difference.html</link>
+      <pubDate>Tue, 27 Dec 2011 00:00:00 +0800</pubDate>
+      <author>果合用户支持团队</author>
+      <guid>http://help.guohead.com/mediation/analytics-difference</guid>
+      <description>&lt;h2&gt;果合统计数据为什么和我在广告平台后台看到的数据不一致？&lt;/h2&gt;
 
 &lt;p&gt;通常而言，每个广告平台都有自己的一套去重算法，用以排除恶意点击和展示，以保护广告主的利益，在不同平台上，这套统计标准是不一样的。果合作为一个中立的平台，仅仅记录实际的展示数量，而不加入自己的去重算法。对开发者而言，果合提供的数据可以作为一个参考值，具体的结算的标准以广告平台为准。&lt;/p&gt;
-</content>
- </entry>
- 
- 
-</feed>
+</description>
+    </item>
+    
+
+  </channel> 
+</rss>
