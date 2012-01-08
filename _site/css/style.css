@@ -108,6 +108,7 @@ h1.post-header {
 
 .footer_new {
 	width: auto;
+	margin-top: 20px;
 }
 
 .footer_new .basictab {
@@ -118,15 +119,16 @@ h1.post-header {
 }
 
 .footer_new .basictab ul {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .footer_new .basictab li {
 	padding-right: 30px;
+	float: none;
 }
 
 .footer_new .basictab a {
 	border: none;
 	padding: 0px;
-	ddisplay: inline;
+	display: inline;
 }
