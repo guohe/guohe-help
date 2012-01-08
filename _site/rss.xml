@@ -6,8 +6,8 @@
     <atom:link href="http://help.guohead.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>果合开发者帮助中心</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 30 Dec 2011 13:45:59 +0800</pubDate>
-    <lastBuildDate>Fri, 30 Dec 2011 13:45:59 +0800</lastBuildDate>
+    <pubDate>Sun, 08 Jan 2012 20:21:47 +0800</pubDate>
+    <lastBuildDate>Sun, 08 Jan 2012 20:21:47 +0800</lastBuildDate>
 
     
     <item>
@@ -16,9 +16,7 @@
       <pubDate>Thu, 29 Dec 2011 00:00:00 +0800</pubDate>
       <author>果合用户支持团队</author>
       <guid>http://help.guohead.com/getting-started/guohe-getting-started</guid>
-      <description>&lt;h2&gt;果合新手详细使用文档&lt;/h2&gt;
-
-&lt;h3&gt;添加应用&lt;/h3&gt;
+      <description>&lt;h3&gt;添加应用&lt;/h3&gt;
 
 &lt;p&gt;注册成功，并登陆后，点击“添加应用”按钮进入如下图所示的填写应用信息页面。&lt;/p&gt;
 
@@ -78,7 +76,7 @@
 
 &lt;p&gt;ID / 广告位ID / App ID 是各广告平台为应用生成的唯一标识，当您在广告平台创建应用成功时即可看到此唯一标识。您需要将ID填入到果合后台（应用面板 - 广告配置，见下图）才能展示来自该广告平台的广告。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../images/dashboard-publisher-id.png&quot; alt=&quot;Publisher ID&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../images/dashboard-add-publisher-id.png&quot; alt=&quot;Publisher ID&quot; /&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -1,6 +1,8 @@
 ---
-layout: base-post
+layout: base
 ---
+{% include navigation.html %}
+
 <div class="post">
   <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
   <p class="post-metainfo"><span class="label">{{ page.date | date_to_string }}</span></p>
