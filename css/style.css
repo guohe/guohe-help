@@ -47,6 +47,7 @@ body, p, li {
 
 #site-navigation .breadcrumb a {
 	font-size: 13px;
+	cursor: hand;
 }
 
 #site-navigation ul.breadcrumb {
