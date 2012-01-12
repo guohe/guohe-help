@@ -13,6 +13,137 @@
    <link rel="stylesheet" href="/css/solutions.css" type="text/css" media="screen, projection" />
    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection" />
    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+   <script type="text/javascript" src="/js/jquery.ba-bbq.min.js"></script>
+   <script language="Javascript" type="text/javascript">
+  
+$(document).ready(function() {
+	oldhtml = null;
+	entries = null;
+
+    function htmlEscape(str) {
+        return str.replace(/&/g,'&amp;').                                         
+	        replace(/>/g,'&gt;').                                           
+	        replace(/</g,'&lt;'). 	                
+	        replace(/"/g,'&quot;');
+    };
+    
+    function prettyDate(d) {
+        var m_names = new Array("January", "February", "March", 
+			"April", "May", "June", "July", "August", "September", 
+			"October", "November", "December");					
+		var curr_date = d.getDate();
+		var sup = "";
+		if (curr_date == 1 || curr_date == 21 || curr_date ==31) {
+		   sup = "st";
+		}
+		else if (curr_date == 2 || curr_date == 22) {
+		   sup = "nd";
+		}
+		else if (curr_date == 3 || curr_date == 23) {
+		   sup = "rd";
+		}
+		else {
+		   sup = "th";
+		}
+		
+		var curr_month = d.getMonth();
+		var curr_year = d.getFullYear();
+		
+		return m_names[curr_month] + " " + curr_date + "<SUP>" + sup + "</SUP> "+ curr_year;
+    };
+    
+	// from http://stackoverflow.com/questions/2731579/convert-an-xml-schema-date-string-to-a-javascript-date
+	var xmlDateToJavascriptDate = function(xmlDate) {
+		var re = /^([0-9]{4,})-([0-9]{2})-([0-9]{2})T([0-9]{2}):([0-9]{2}):([0-9]{2})(\.[0-9]+)?(Z|([+-])([0-9]{2}):([0-9]{2}))?$/;
+		var match = xmlDate.match(re);
+		if (!match)
+		return null;
+		
+		var all = match[0];
+		var year = match[1];  var month = match[2];  var day = match[3];
+		var hour = match[4];  var minute = match[5]; var second = match[6];
+		var milli = match[7]; 
+		var z_or_offset = match[8];  var offset_sign = match[9]; 
+		var offset_hour = match[10]; var offset_minute = match[11];
+		
+		if (offset_sign) { // ended with +xx:xx or -xx:xx as opposed to Z or nothing
+			var direction = (offset_sign == "+" ? 1 : -1);
+			hour =   parseInt(hour)   + parseInt(offset_hour)   * direction;
+			minute = parseInt(minute) + parseInt(offset_minute) * direction;
+		}
+		var utcDate = Date.UTC(year, month, day, hour, minute, second, (milli || 0));
+		return new Date(utcDate);
+	};
+
+	function findEntries(q) {
+	  // given regex q, find matches in entries dom document
+	  var matches = [];
+	  var rq = new RegExp(q, 'im');
+	  for (var i = 0; i < entries.length; i++) {
+	    var entry = entries[i];
+	    var title = $(entry.getElementsByTagName('title')[0]).text();
+	    var link = $(entry.getElementsByTagName('link')[0]).attr('href');
+	    var content = $(entry.getElementsByTagName('content')[0]).text();                   
+	    if (rq.test(title) || rq.test(link) || rq.test(content)) {
+	      var updated = prettyDate(xmlDateToJavascriptDate($(entry.getElementsByTagName('updated')[0]).text()));
+	      matches.push({'title':title, 'link':link, 'date':updated});
+	    }
+	  }
+	  // Build results table from matches[]
+	};
+
+	$('#search_form').click(function(e) {
+	  // grab query and push page state
+	  // var query = $('#query').val();
+	  var query = "admob";
+	  window.location.hash = 'search='+escape(query.replace(/\s/g, '+'));
+	  e.preventDefault();
+	});
+	
+	$(window).bind('hashchange', function(e) {
+	  // called when the part of the URL after the hash (#) changes         
+	  var query = "admob";
+	  // var query = $.param.fragment();  // e.g. "#search=text"
+	  if (/[#]*search=(.*)/.test(query)) {
+	    query = $.param.fragment().replace('+', ' ').replace('search=', '');
+	    $('#query').val(query);  // in case the user browsed to the search
+	    if (query) {
+	      if (oldhtml == null) { // save state!
+	        oldhtml = $('#content').html(); 
+	      }
+	      $('#content').html('<div id="loader"></div>');
+	      $('#footer').hide();
+	      // $('#query').blur().attr('disabled', true);
+	      if (entries == null) {
+	        // lazily load and parse the atom.xml feed
+	        $.ajax({url:'/js/atom.xml?r='+(Math.random()*99999999999), dataType:'xml', success: function(data) {
+	          entries = data.getElementsByTagName('entry');
+	          findEntries(query);
+	        }});
+	      } else { 
+	        // search the pre-loaded atom.xml feed
+	        findEntries(query);
+	      }
+	      // disable the search bar until current search is complete
+	      // $('#query').blur().attr('disabled', false);
+	    }
+	  } else {
+	    // revert to original page, hide search results
+	    if (oldhtml == null) { 
+	      oldhtml = $('#content').html(); 
+	    }
+	    $('#content').html(oldhtml);
+	    $('#footer').show();
+	    $('#query').blur();
+	    oldhtml = null;
+	  }
+	});
+	
+	// called in case user browses "into" a search
+	$(window).trigger( 'hashchange' );
+});
+</script>
 	<script type="text/javascript">
 
 	 var _gaq = _gaq || [];
