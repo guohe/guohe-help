@@ -38,7 +38,7 @@ category: getting-started
 			<td>Baidu</td>
 			<td>http://munion.baidu.com</td>
 			<td>支持</td>
-			<td>不支持</td>
+			<td>支持</td>
 		</tr>
 		<tr>
 			<td>亿动智道</td>
